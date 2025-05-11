@@ -1,25 +1,8 @@
-<style>
-/* Import the professional font Roboto from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
-/* Apply Roboto font to the entire page */
-body {
-    font-family: 'Roboto', sans-serif;
-}
-
-/* Optionally: Make headings slightly bolder */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-}
-</style>
-
-
-
 <p align="center">
   <img src="https://github.com/niharikamg/portfolio/blob/main/profile-picture.jpg?raw=true" alt="Niharika MG" width="200" height="200" style="border-radius:50%;">
 </p>
 
-<h1 align="center">Hi there, I'm Niharika MG </h1>
+<h1 align="center">Hi there, I'm Niharika MG</h1>
 
 <p align="center">
   <b>Cloud Engineer</b> | <b>Full-Stack Developer</b> | <b>DevOps Enthusiast</b>
@@ -37,7 +20,6 @@ h1, h2, h3, h4, h5, h6 {
   </a>
 </p>
 
----
 
 
 # About Me
