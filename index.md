@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/niharikamg/portfolio/blob/main/profile-picture.jpg?raw=true" alt="Niharika MG" width="200" height="200" style="border-radius:50%;">
+  <img src="https://github.com/niharikamg/portfolio/blob/main/Profile-Picture.jpg?raw=true" alt="Niharika MG" width="200" height="200" style="border-radius:50%;">
 </p>
 
 <h1 align="center">Hi there, I'm Niharika MG</h1>
