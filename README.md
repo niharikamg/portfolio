@@ -53,8 +53,8 @@ I believe technology should not only solve problems, but also empower people, im
   - CLI Tools & Automation
   - Security Projects
   - Other Cool Projects
-- **Education** — Academic background
-- **Let's Connect** — Contact links (Email, LinkedIn, GitHub)
+- **Education** - Academic background
+- **Let's Connect** - Contact links (Email, LinkedIn, GitHub)
 
 ---
 
