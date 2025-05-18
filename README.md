@@ -58,14 +58,14 @@ I believe technology should not only solve problems, but also empower people, im
 
 ---
 
-## 🚀 How to View
+## How to View
 
 You can view the live portfolio here:  
 🔗 [Visit My Portfolio](https://niharikamg.github.io/portfolio/)
 
 ---
 
-## 🎨 Font and Design Customizations
+## Font and Design Customizations
 
 The site uses the **Roboto** font from [Google Fonts](https://fonts.google.com/specimen/Roboto) for a clean, professional appearance.  
 Custom CSS ensures:
@@ -75,7 +75,7 @@ Custom CSS ensures:
 
 ---
 
-## 📬 Contact
+## Contact
 
 If you'd like to collaborate, discuss a project, or just say hi — feel free to reach out!
 
