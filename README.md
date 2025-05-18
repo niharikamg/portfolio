@@ -1,5 +1,5 @@
 
-# Niharika MG — Professional Portfolio
+# Niharika MG - Professional Portfolio
 
 Welcome to my personal portfolio!  
 This project is designed to showcase my work in cloud engineering, full-stack development, DevOps, AI security, and software engineering.
