@@ -6,7 +6,7 @@ This project is designed to showcase my work in cloud engineering, full-stack de
 
 ---
 
-## 🌟 About
+## About
 
 This portfolio highlights my journey across multiple domains:
 - Cloud-native application development on AWS and Azure
@@ -20,17 +20,17 @@ I believe technology should not only solve problems, but also empower people, im
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
-- **GitHub Pages** — Hosting the portfolio site
-- **HTML + Markdown** — Content structuring
-- **Custom CSS** — Styling and layout improvements
-- **Google Fonts (Roboto)** — For professional, clean typography
-- **Responsive Design** — Optimized for both desktop and mobile devices
+- **GitHub Pages** - Hosting the portfolio site
+- **HTML + Markdown** - Content structuring
+- **Custom CSS** - Styling and layout improvements
+- **Google Fonts (Roboto)** - For professional, clean typography
+- **Responsive Design** - Optimized for both desktop and mobile devices
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 | Folder/File | Description |
 |:------------|:------------|
@@ -82,12 +82,5 @@ If you'd like to collaborate, discuss a project, or just say hi — feel free to
 - 📧 Email: [mgniharikaa@gmail.com](mailto:mgniharikaa@gmail.com)
 - 💼 LinkedIn: [linkedin.com/in/niharika-mg](https://www.linkedin.com/in/niharika-mg)
 - 🛠 GitHub: [github.com/niharikamg](https://github.com/niharikamg)
-
----
-
-## 📜 License
-
-This portfolio is open for inspiration and sharing.  
-Feel free to reference or adapt it with credit.
 
 ---
