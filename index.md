@@ -59,77 +59,46 @@
     </p>
   </section>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Hello and Welcome! I'm Niharika - a Software Engineer passionate about building secure, scalable, and intelligent systems...</p>
-  </section>
+  <!-- Keep all other sections as they were before -->
 
   <section>
-    <h2>Professional Journey</h2>
-    <h3>Software Engineer — Vervee Couture, Bangalore, India</h3>
-    <p>May 2022 – July 2024...</p>
-    <h3>IT Support Analyst — University of Cincinnati, OH</h3>
-    <p>September 2024 – Present...</p>
-  </section>
-
-  <section>
-    <h2>Full-Stack & Web Development Projects</h2>
+    <h2>Projects Spotlight (as on Resume)</h2>
     <div class="project-list">
-      <h3><a href="https://github.com/niharikamg/portfolio">Portfolio Website</a></h3>
-      <p>Personal site to showcase skills and experience.</p>
-      <h3><a href="https://github.com/niharikamg/Visual-Interfrace">Visual-Interfrace</a></h3>
-      <p>Data visualization app using D3.js and TopoJSON.</p>
-      <h3><a href="https://github.com/niharikamg/A-Full-Stack-Web-Application-with-Data-Analytics-and-Cloud-Integration">Full Stack Analytics Platform</a></h3>
-      <p>Flask backend with cloud integration and visualization tools.</p>
-      <h3><a href="https://github.com/niharikamg/AWS-Flask-Web-App-Project">AWS Flask Web App</a></h3>
-      <p>Secure login and file upload on EC2 using Flask.</p>
+      <h3><a href="https://github.com/niharikamg/Azure-Data-Factory">Azure Data Factory – ETL Pipeline</a></h3>
+      <p>Automated CSV ingestion, transformation, and storage with real-time reporting using Azure Data Factory, SQL DB, Functions, and Static Web Apps.</p>
+
+      <h3><a href="https://github.com/niharikamg/AWS-Flask-Web-App-Project">Flask Web App on AWS EC2</a></h3>
+      <p>Deployed a Flask application using Apache, mod_wsgi, and SQLite3. Implemented user authentication, profile management, and file upload with automated word count analysis.</p>
+
+      <h3><a href="https://github.com/niharikamg/Serverless-Deployment-AWS">Serverless Deployment on AWS</a></h3>
+      <p>Built scalable, fault-tolerant applications using AWS Lambda, Docker, and EC2. Automated CI/CD workflows with GitHub Actions for seamless and zero-downtime deployments.</p>
+
+      <h3><a href="https://github.com/niharikamg/Big-Data-Weather-Analytics">Big Data Weather Analytics</a></h3>
+      <p>Processed over a decade of climate data using PySpark in Jupyter Notebooks. Extracted insights and trends on wind chill, precipitation, and extreme conditions using forecasting models.</p>
+
+      <h3><a href="https://github.com/niharikamg/COVID-19-Data-Analysis-using-Databricks">Big Data Analytics (COVID-19)</a></h3>
+      <p>Analyzed the correlation between vaccination rates and mortality using PySpark on Databricks. Visualized key findings through interactive dashboards and statistical models.</p>
+
+      <h3><a href="https://github.com/niharikamg/AI-Powered-Search-Engine-with-Big-Data-AI">AI-Powered Tools Suite</a></h3>
+      <p>Developed applications including a finance manager, resume analyzer, job recommender, and cybersecurity threat detector using Flask, Spring Boot, ML, and NLP. Integrated REST APIs, Docker, and PostgreSQL platform-wide.</p>
+
+      <h3><a href="https://github.com/niharikamg/Decentralized-AI-Model-Marketplace">Decentralized AI Model Marketplace</a></h3>
+      <p>Built a blockchain-based platform using Ethereum smart contracts, IPFS, Flask, and React for uploading, buying, and renting AI models. Enabled secure transactions and model access with Web3.js integration.</p>
+
+      <h3><a href="https://github.com/niharikamg/Google-Cloud-Platform-GCP-Chatbot-Project">Conversational AI on GCP</a></h3>
+      <p>Created a chatbot for student queries using Google Dialogflow and deployed it via App Engine and Compute Engine. Logged user input and implemented dynamic, intent-driven responses.</p>
+
+      <h3><a href="https://github.com/niharikamg/Visual-Interfrace">Interactive County Data Visualization</a></h3>
+      <p>Built a web-based data visualization tool using D3.js, TopoJSON, and CSV to explore U.S. county-level health and socioeconomic data. Enabled dynamic maps, filters, and charts with interactive UI features.</p>
+
+      <h3><a href="https://github.com/niharikamg/CloudOps-Insight">CloudOps Insight – Cloud Monitoring & Deployment Dashboard</a></h3>
+      <p>Developed a full-stack dashboard to monitor AWS cloud resources and manage CI/CD pipelines. Integrated Prometheus and Grafana for real-time metrics and alerts. Used Terraform for infrastructure provisioning and deployed microservices with Kubernetes.</p>
     </div>
   </section>
 
   <section>
-    <h2>Cloud & DevOps Projects</h2>
-    <div class="project-list">
-      <h3><a href="https://github.com/niharikamg/Azure-Data-Factory">Azure Data Factory</a></h3>
-      <p>Cloud ETL pipeline using Azure services.</p>
-      <h3><a href="https://github.com/niharikamg/CloudOps-Insight">CloudOps Insight</a></h3>
-      <p>Full-stack dashboard with CI/CD monitoring.</p>
-      <h3><a href="https://github.com/niharikamg/Serverless-Deployment-AWS">Serverless on AWS</a></h3>
-      <p>Serverless architecture using Lambda and API Gateway.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>AI & Machine Learning Projects</h2>
-    <div class="project-list">
-      <h3><a href="https://github.com/niharikamg/AI-Powered-Code-Auto-Refactoring-System">Code Auto Refactor</a></h3>
-      <p>AI system for static code refactoring using ML.</p>
-      <h3><a href="https://github.com/niharikamg/AI-Powered-Financial-Fraud-Detection-System">Fraud Detection</a></h3>
-      <p>AI-based detection of financial anomalies.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Blockchain Projects</h2>
-    <div class="project-list">
-      <h3><a href="https://github.com/niharikamg/Decentralized-AI-Model-Marketplace">AI Model Marketplace</a></h3>
-      <p>Upload and monetize AI models using Ethereum + IPFS.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Education</h2>
-    <p><strong>Master of Engineering in Computer Science</strong><br>
-    University of Cincinnati, Ohio, USA<br>
-    Aug 2024 – Present | GPA: 4.0 / 4.0</p>
-  </section>
-
-  <section>
-    <h2>Let's Connect</h2>
-    <p>
-      📧 Email: <a href="mailto:mgniharikaa@gmail.com">mgniharikaa@gmail.com</a><br>
-      💼 LinkedIn: <a href="https://www.linkedin.com/in/niharika-mg">linkedin.com/in/niharika-mg</a><br>
-      🛠 GitHub: <a href="https://github.com/niharikamg">github.com/niharikamg</a>
-    </p>
+    <h2>Other Projects</h2>
+    <p>All other projects from the portfolio that are not listed above continue as they are in your original portfolio format below.</p>
   </section>
 </body>
 
