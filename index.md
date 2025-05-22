@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -83,7 +83,7 @@
 </section>
 
 <section>
-  <h2>🚀 Spotlight Projects</h2>
+  <h2>Spotlight Projects</h2>
 
   <details open>
     <summary><strong>CloudOps Insight – Cloud Monitoring Dashboard</strong></summary>
