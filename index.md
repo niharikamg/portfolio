@@ -22,7 +22,7 @@
 
 ---
 
-# 🔦 Projects Spotlight
+# Projects Spotlight
 
 <details open>
 <summary><strong>CloudOps Insight – Cloud Monitoring Dashboard</strong></summary>
