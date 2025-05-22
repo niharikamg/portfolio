@@ -20,6 +20,49 @@
   </a>
 </p>
 
+# About Me
+
+Hello and Welcome! I'm Niharika - a Software Engineer passionate about building secure, scalable, and intelligent systems.
+
+If you're curious about how cloud computing, AI security, and full-stack development come together to solve real-world challenges, you're in the right place. My work lives at this intersection, blending innovation with reliability to create systems that perform under pressure and scale with confidence.
+
+Over the years, I've designed and deployed cloud-native applications on AWS and Azure, architected microservices platforms, built AI-driven tools, and optimized application performance using Kubernetes and Docker ecosystems. Every project has taught me something new, and fueled my drive to build smarter, more resilient solutions.
+
+I believe technology should not just be powerful, but also accessible, secure, and impactful.  
+Whether it's enabling faster data insights, building secure AI models, or designing systems that can grow effortlessly - I'm always focused on delivering outcomes that matter.
+
+Feel free to explore my portfolio below. I hope it gives you a glimpse into my passion for solving complex problems and building meaningful technology!
+
+---
+
+# Professional Journey
+
+###  Software Engineer — Vervee Couture, Bangalore, India  
+May 2022 – July 2024
+
+At Vervee Couture, I had the opportunity to work at the crossroads of technology, creativity, and customer experience.  
+I led the design and development of a microservices-based e-commerce platform using React and AWS, which boosted user engagement by 30% and improved system response times by 25%.
+
+Beyond feature development, I took a deep dive into cloud architecture - building a resilient backend with AWS EC2, Lambda, API Gateway, and RDS to ensure 99.9% uptime even during peak seasons.  
+I also engineered CI/CD pipelines with GitHub Actions, Jenkins, and Docker, streamlining deployments and reducing release cycles by 40%.
+
+Security was never an afterthought: I implemented AES encryption, **OAuth 2.0 authentication, and helped integrate a reliable payment system, ensuring customer trust remained rock solid.
+
+This experience sharpened my ability to build systems that not only perform at scale — but are also designed with user trust and long-term reliability at the core.
+
+---
+
+###  IT Support Analyst — University of Cincinnati, Library IT Services, Cincinnati, OH  
+September 2024 – Present
+
+Currently, I am part of the IT Services team at the University of Cincinnati, working to improve digital experiences for students and faculty.
+
+Here, I develop Flask-based web applications that have reduced resource access times by 40%, making academic research faster and more efficient.  
+I also focus heavily on backend optimization — tuning relational database queries to enhance system performance.
+
+Alongside development, I provide technical support, ensuring that technology never becomes a barrier to learning.  
+This role has strengthened my skills in user-centric design, quick problem-solving, and efficient backend engineering.
+
 ---
 
 # Projects Spotlight
@@ -97,7 +140,6 @@ Interactive visualization tool for U.S. county-level health and socioeconomic da
 </details>
 
 ---
-
 # 🧩 Other Alternative Projects
 
 <details>
