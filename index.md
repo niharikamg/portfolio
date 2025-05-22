@@ -1,195 +1,231 @@
-<p align="center">
-  <img src="https://github.com/niharikamg/portfolio/blob/main/Profile-Picture.jpg?raw=true" alt="Niharika MG" width="200" height="200" style="border-radius:50%;">
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Niharika MG | Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f8f9fa;
+      color: #333;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    section {
+      margin: 40px auto;
+      max-width: 900px;
+    }
+    details {
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background: #fff;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .badges, .center {
+      text-align: center;
+    }
+    .badges a {
+      margin: 0 5px;
+    }
+    .avatar {
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
 
-<h1 align="center">Hi there, I'm Niharika MG</h1>
+<section>
+  <img src="https://github.com/niharikamg/portfolio/blob/main/Profile-Picture.jpg?raw=true" alt="Niharika MG" class="avatar" />
+  <h1>Hi there, I'm Niharika MG</h1>
+  <p class="center"><strong>Cloud Engineer</strong> | <strong>Full-Stack Developer</strong> | <strong>DevOps Enthusiast</strong></p>
+  <div class="badges">
+    <a href="https://www.linkedin.com/in/niharika-mg" target="_blank">
+      <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn">
+    </a>
+    <a href="mailto:mgniharikaa@gmail.com" target="_blank">
+      <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail" alt="Email">
+    </a>
+    <a href="https://niharikamg.github.io/portfolio/" target="_blank">
+      <img src="https://img.shields.io/badge/Portfolio-Live-pink?style=for-the-badge&logo=githubpages" alt="Portfolio">
+    </a>
+  </div>
+</section>
 
-<p align="center">
-  <b>Cloud Engineer</b> | <b>Full-Stack Developer</b> | <b>DevOps Enthusiast</b>
-</p>
+<section>
+  <h2>👋 About Me</h2>
+  <p>
+    I'm a Software Engineer passionate about building secure, scalable, and intelligent systems. I’ve developed cloud-native applications on AWS and Azure, built AI-powered tools, and optimized full-stack platforms using Docker and Kubernetes.
+  </p>
+  <p>
+    Whether it's enabling faster data insights, building secure AI models, or designing cloud services that scale — I focus on creating impactful, resilient technology. Explore my projects below!
+  </p>
+</section>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/niharika-mg" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn Badge">
-  </a>
-  <a href="mailto:mgniharikaa@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail" alt="Email Badge">
-  </a>
-  <a href="https://niharikamg.github.io/portfolio/" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-Live-pink?style=for-the-badge&logo=githubpages" alt="Portfolio Badge">
-  </a>
-</p>
+<section>
+  <h2>🚀 Spotlight Projects</h2>
 
-# About Me
+  <details open>
+    <summary><strong>CloudOps Insight – Cloud Monitoring Dashboard</strong></summary>
+    <p>Prometheus + Grafana + Kubernetes monitoring stack with Terraform automation.</p>
+    <p>🛠 Kubernetes · Prometheus · Grafana · Terraform · GitHub Actions</p>
+    <a href="https://github.com/niharikamg/CloudOps-Insight" target="_blank">🔗 View project</a>
+  </details>
 
-Hello and Welcome! I'm Niharika - a Software Engineer passionate about building secure, scalable, and intelligent systems.
+  <details>
+    <summary><strong>Azure Data Factory – ETL Pipeline</strong></summary>
+    <p>ETL automation using ADF, Blob Storage, SQL DB and Azure Functions for real-time reporting.</p>
+    <p>🛠 Azure Data Factory · SQL · Python</p>
+    <a href="https://github.com/niharikamg/Azure-Data-Factory" target="_blank">🔗 View project</a>
+  </details>
 
-If you're curious about how cloud computing, AI security, and full-stack development come together to solve real-world challenges, you're in the right place. My work lives at this intersection, blending innovation with reliability to create systems that perform under pressure and scale with confidence.
+  <details>
+    <summary><strong>AWS Flask Web App</strong></summary>
+    <p>Secure web app deployed on EC2 with authentication, upload & word count analysis.</p>
+    <p>🛠 Flask · EC2 · Apache · SQLite</p>
+    <a href="https://github.com/niharikamg/AWS-Flask-Web-App-Project" target="_blank">🔗 View project</a>
+  </details>
 
-Over the years, I've designed and deployed cloud-native applications on AWS and Azure, architected microservices platforms, built AI-driven tools, and optimized application performance using Kubernetes and Docker ecosystems. Every project has taught me something new, and fueled my drive to build smarter, more resilient solutions.
+  <details>
+    <summary><strong>Serverless Deployment on AWS</strong></summary>
+    <p>Built serverless event-driven services using Lambda and API Gateway with Docker.</p>
+    <p>🛠 AWS Lambda · Docker · GitHub Actions</p>
+    <a href="https://github.com/niharikamg/Serverless-Deployment-AWS" target="_blank">🔗 View project</a>
+  </details>
 
-I believe technology should not just be powerful, but also accessible, secure, and impactful.  
-Whether it's enabling faster data insights, building secure AI models, or designing systems that can grow effortlessly - I'm always focused on delivering outcomes that matter.
+  <details>
+    <summary><strong>Big Data Weather Analytics</strong></summary>
+    <p>Analyzed 10+ years of weather data using PySpark with trend and extreme condition insights.</p>
+    <p>🛠 PySpark · Jupyter</p>
+    <a href="https://github.com/niharikamg/Big-Data-Weather-Analytics" target="_blank">🔗 View project</a>
+  </details>
 
-Feel free to explore my portfolio below. I hope it gives you a glimpse into my passion for solving complex problems and building meaningful technology!
+  <details>
+    <summary><strong>COVID-19 Analytics with Databricks</strong></summary>
+    <p>Explored vaccination vs. mortality using PySpark and built interactive dashboards.</p>
+    <p>🛠 Python · Databricks · PySpark</p>
+    <a href="https://github.com/niharikamg/COVID-19-Data-Analysis-using-Databricks" target="_blank">🔗 View project</a>
+  </details>
 
----
+  <details>
+    <summary><strong>AI Tools Suite</strong></summary>
+    <p>Includes resume analyzer, recommender, finance manager & threat detector with Flask + ML.</p>
+    <p>🛠 Flask · Spring Boot · ML · PostgreSQL</p>
+    <a href="https://github.com/niharikamg?tab=repositories&q=AI" target="_blank">🔗 View suite</a>
+  </details>
 
-# Professional Journey
+  <details>
+    <summary><strong>Decentralized AI Model Marketplace</strong></summary>
+    <p>Blockchain-based marketplace for renting & uploading ML models using Ethereum & IPFS.</p>
+    <p>🛠 React · Flask · Solidity · Web3.js · IPFS</p>
+    <a href="https://github.com/niharikamg/Decentralized-AI-Model-Marketplace" target="_blank">🔗 View project</a>
+  </details>
 
-###  Software Engineer — Vervee Couture, Bangalore, India  
-May 2022 – July 2024
+  <details>
+    <summary><strong>GCP Chatbot for Student Services</strong></summary>
+    <p>Intent-based Q&A chatbot using Dialogflow, hosted via GCP App & Compute Engine.</p>
+    <p>🛠 Dialogflow · Python · GCP</p>
+    <a href="https://github.com/niharikamg/Google-Cloud-Platform-GCP-Chatbot-Project" target="_blank">🔗 View project</a>
+  </details>
 
-At Vervee Couture, I had the opportunity to work at the crossroads of technology, creativity, and customer experience.  
-I led the design and development of a microservices-based e-commerce platform using React and AWS, which boosted user engagement by 30% and improved system response times by 25%.
+  <details>
+    <summary><strong>Interactive County Data Visualization</strong></summary>
+    <p>D3.js dashboard with TopoJSON for county-level health & socioeconomic data visualization.</p>
+    <p>🛠 JavaScript · D3.js · TopoJSON</p>
+    <a href="https://niharikamg.github.io/Visual-Interfrace" target="_blank">🔗 Live Demo</a> · 
+    <a href="https://github.com/niharikamg/Visual-Interfrace" target="_blank">Repo</a>
+  </details>
+</section>
+<section>
+  
+  <h2>🧩 Other Alternative Projects</h2>
 
-Beyond feature development, I took a deep dive into cloud architecture - building a resilient backend with AWS EC2, Lambda, API Gateway, and RDS to ensure 99.9% uptime even during peak seasons.  
-I also engineered CI/CD pipelines with GitHub Actions, Jenkins, and Docker, streamlining deployments and reducing release cycles by 40%.
+  <details>
+    <summary><strong>AI-Powered Code Auto Refactoring System</strong></summary>
+    <p>Analyzes and restructures Python code for better performance using AST and ML.</p>
+    <p>🛠 Python · AST · NLP</p>
+    <a href="https://github.com/niharikamg/AI-Powered-Code-Auto-Refactoring-System" target="_blank">🔗 View project</a>
+  </details>
 
-Security was never an afterthought: I implemented AES encryption, **OAuth 2.0 authentication, and helped integrate a reliable payment system, ensuring customer trust remained rock solid.
+  <details>
+    <summary><strong>Blockchain-Based Secure Authentication System</strong></summary>
+    <p>Decentralized login/auth using Ethereum smart contracts and Web3.js — no central servers.</p>
+    <p>🛠 Solidity · Web3.js · Ethereum</p>
+    <a href="https://github.com/niharikamg/Blockchain-Based-Secure-Authentication-System" target="_blank">🔗 View project</a>
+  </details>
 
-This experience sharpened my ability to build systems that not only perform at scale — but are also designed with user trust and long-term reliability at the core.
+  <details>
+    <summary><strong>Resume Analyzer & Job Recommender</strong></summary>
+    <p>NLP-based systems for resume scoring and job matching with semantic similarity.</p>
+    <p>🛠 Python · Java · NLP</p>
+    <a href="https://github.com/niharikamg/AI-Based-Resume-Analyzer" target="_blank">Resume Analyzer</a> · 
+    <a href="https://github.com/niharikamg/AI-Based-Job-Recommendation-System" target="_blank">Job Recommender</a>
+  </details>
 
----
+  <details>
+    <summary><strong>AI-Powered Code Review Bot</strong></summary>
+    <p>Automated tool that reviews code for quality and optimization using machine learning.</p>
+    <p>🛠 Python · AI · Static Analysis</p>
+    <a href="https://github.com/niharikamg/AI-Powered-Code-Review-Bot" target="_blank">🔗 View project</a>
+  </details>
 
-###  IT Support Analyst — University of Cincinnati, Library IT Services, Cincinnati, OH  
-September 2024 – Present
+  <details>
+    <summary><strong>AI-Powered Financial Fraud Detection</strong></summary>
+    <p>Uses machine learning to detect suspicious financial transactions.</p>
+    <p>🛠 Python · ML · Fraud Detection</p>
+    <a href="https://github.com/niharikamg/AI-Powered-Financial-Fraud-Detection-System" target="_blank">🔗 View project</a>
+  </details>
 
-Currently, I am part of the IT Services team at the University of Cincinnati, working to improve digital experiences for students and faculty.
+  <details>
+    <summary><strong>Trading Bots (Classic & AI)</strong></summary>
+    <p>Cryptocurrency bots — one rule-based, one AI-enhanced — that auto-execute trades.</p>
+    <p>🛠 Python · ML · APIs</p>
+    <a href="https://github.com/niharikamg/Trading-Bot-Full-Project" target="_blank">Classic Bot</a> · 
+    <a href="https://github.com/niharikamg/AI-Powered-Crypto-Trading-Bot" target="_blank">AI Bot</a>
+  </details>
 
-Here, I develop Flask-based web applications that have reduced resource access times by 40%, making academic research faster and more efficient.  
-I also focus heavily on backend optimization — tuning relational database queries to enhance system performance.
+  <details>
+    <summary><strong>Chatbot & Email Automation</strong></summary>
+    <p>A chatbot with NLTK and a script to send automated emails with attachments.</p>
+    <p>🛠 Python · NLTK · smtplib</p>
+    <a href="https://github.com/niharikamg/chatbot" target="_blank">Chatbot</a> · 
+    <a href="https://github.com/niharikamg/Automated-Email-Sender" target="_blank">Email Sender</a>
+  </details>
 
-Alongside development, I provide technical support, ensuring that technology never becomes a barrier to learning.  
-This role has strengthened my skills in user-centric design, quick problem-solving, and efficient backend engineering.
+  <details>
+    <summary><strong>File Utilities & CLI Tools</strong></summary>
+    <p>Includes a PDF merger, task manager, GitHub repo analyzer, and folder organizer — all terminal-based.</p>
+    <p>🛠 Python · Shell Scripting</p>
+    <a href="https://github.com/niharikamg/PDF-Merger-CLI" target="_blank">PDF Merger</a> · 
+    <a href="https://github.com/niharikamg/GitHub-Repo-Analyzer-CLI" target="_blank">Repo Analyzer</a> · 
+    <a href="https://github.com/niharikamg/task-manager-cli" target="_blank">Task Manager</a> · 
+    <a href="https://github.com/niharikamg/organizer" target="_blank">File Organizer</a>
+  </details>
 
----
-
-<h2>🚀 Projects Spotlight</h2>
-
-<details open>
-  <summary><strong>CloudOps Insight – Cloud Monitoring Dashboard</strong></summary>
-  A full-stack dashboard to monitor AWS cloud resources and CI/CD pipelines using Prometheus, Grafana, and Kubernetes. Infrastructure automated with Terraform and GitHub Actions.<br>
-  🛠 Kubernetes · Prometheus · Grafana · Terraform · GitHub Actions<br>
-  🔗 <a href="https://github.com/niharikamg/CloudOps-Insight" target="_blank">View project</a>
-</details>
-
-<details>
-  <summary><strong>Azure Data Factory – ETL Pipeline</strong></summary>
-  Automated CSV ingestion, transformation, and reporting using Azure Data Factory, Blob Storage, SQL, and Azure Functions.<br>
-  🛠 Azure Data Factory · SQL · Python<br>
-  🔗 <a href="https://github.com/niharikamg/Azure-Data-Factory" target="_blank">View project</a>
-</details>
-
-<details>
-  <summary><strong>AWS Flask Web App</strong></summary>
-  Flask-based secure web application deployed on EC2 with authentication and file-based word count analysis.<br>
-  🛠 Flask · AWS EC2 · Apache · SQLite<br>
-  🔗 <a href="https://github.com/niharikamg/AWS-Flask-Web-App-Project" target="_blank">View project</a>
-</details>
-
-<details>
-  <summary><strong>Serverless Deployment on AWS</strong></summary>
-  Serverless architecture using AWS Lambda, Docker, and GitHub Actions.<br>
-  🛠 AWS Lambda · Docker · GitHub Actions<br>
-  🔗 <a href="https://github.com/niharikamg/Serverless-Deployment-AWS" target="_blank">View project</a>
-</details>
-
-<details>
-  <summary><strong>Decentralized AI Model Marketplace</strong></summary>
-  A blockchain platform to rent/upload AI models using Ethereum smart contracts, IPFS, and Web3.js.<br>
-  🛠 React · Flask · Solidity · Web3.js · IPFS<br>
-  🔗 <a href="https://github.com/niharikamg/Decentralized-AI-Model-Marketplace" target="_blank">View project</a>
-</details>
-
-<details>
-  <summary><strong>AI Tools Suite</strong></summary>
-  A suite of applications (resume analyzer, job recommender, threat detector) built with Flask, Spring Boot, and PostgreSQL.<br>
-  🛠 Flask · Spring Boot · ML · PostgreSQL<br>
-  🔗 <a href="https://github.com/niharikamg?tab=repositories&q=AI" target="_blank">Explore suite</a>
-</details>
-
-<details>
-  <summary><strong>GCP Chatbot for Student Services</strong></summary>
-  Chatbot using Google Dialogflow and deployed via App Engine for academic Q&A automation.<br>
-  🛠 Python · Dialogflow · GCP<br>
-  🔗 <a href="https://github.com/niharikamg/Google-Cloud-Platform-GCP-Chatbot-Project" target="_blank">View project</a>
-</details>
-
-<details>
-  <summary><strong>Visual-Interfrace – County Data Dashboard</strong></summary>
-  Interactive web tool for U.S. county-level health and economic data using D3.js.<br>
-  🛠 JavaScript · D3.js · TopoJSON<br>
-  🔗 <a href="https://niharikamg.github.io/Visual-Interfrace" target="_blank">Live demo</a> · <a href="https://github.com/niharikamg/Visual-Interfrace" target="_blank">Repo</a>
-</details>
-
----
-
-<h2>🧩 Other Alternative Projects</h2>
-
-<details>
-  <summary><strong>AI-Powered Code Auto Refactoring System</strong></summary>
-  Automatically optimizes Python code using static analysis and ML techniques.<br>
-  🛠 Python · AST · NLP<br>
-  🔗 <a href="https://github.com/niharikamg/AI-Powered-Code-Auto-Refactoring-System" target="_blank">View project</a>
-</details>
-
-<details>
-  <summary><strong>COVID-19 Data Analytics with Databricks</strong></summary>
-  Analyzed COVID-19 trends using PySpark and created visual insights on Databricks.<br>
-  🛠 Python · PySpark · Databricks<br>
-  🔗 <a href="https://github.com/niharikamg/COVID-19-Data-Analysis-using-Databricks" target="_blank">View project</a>
-</details>
-
-<details>
-  <summary><strong>Blockchain-Based Secure Authentication System</strong></summary>
-  Secure blockchain-based authentication platform without centralized control.<br>
-  🛠 Ethereum · Solidity · Web3.js<br>
-  🔗 <a href="https://github.com/niharikamg/Blockchain-Based-Secure-Authentication-System" target="_blank">View project</a>
-</details>
-
-<details>
-  <summary><strong>Resume Analyzer & Job Recommender</strong></summary>
-  NLP-driven tools that evaluate resumes and match jobs using semantic search.<br>
-  🛠 Python · Java · NLP<br>
-  🔗 <a href="https://github.com/niharikamg/AI-Based-Resume-Analyzer" target="_blank">Resume Analyzer</a> · <a href="https://github.com/niharikamg/AI-Based-Job-Recommendation-System" target="_blank">Job Recommender</a>
-</details>
-
-<details>
-  <summary><strong>CLI Tools Collection</strong></summary>
-  Tools for PDF merging, GitHub repo stats, weather reports, and task tracking.<br>
-  🛠 Python · CLI<br>
-  🔗 <a href="https://github.com/niharikamg/PDF-Merger-CLI" target="_blank">PDF Merger</a> · <a href="https://github.com/niharikamg/GitHub-Repo-Analyzer-CLI" target="_blank">Repo Analyzer</a> · <a href="https://github.com/niharikamg/task-manager-cli" target="_blank">Task Manager</a>
-</details>
-
-<details>
-  <summary><strong>AI-Powered Code Review Bot</strong></summary>
-  ML-driven code reviewer that analyzes logic, structure, and quality suggestions.<br>
-  🛠 Python · ML · Code Analysis<br>
-  🔗 <a href="https://github.com/niharikamg/AI-Powered-Code-Review-Bot" target="_blank">View project</a>
-</details>
-
-<details>
-  <summary><strong>Trading Bots (Classic + AI)</strong></summary>
-  Cryptocurrency trading bots with rule-based and ML-enhanced strategies.<br>
-  🛠 Python · AI · Exchange APIs<br>
-  🔗 <a href="https://github.com/niharikamg/Trading-Bot-Full-Project" target="_blank">Full Bot</a> · <a href="https://github.com/niharikamg/AI-Powered-Crypto-Trading-Bot" target="_blank">AI Bot</a>
-</details>
-
-<details>
-  <summary><strong>Chatbot + Email Tools</strong></summary>
-  Includes an NLTK chatbot and automated email-sending script with templates.<br>
-  🛠 Python · smtplib · NLTK<br>
-  🔗 <a href="https://github.com/niharikamg/chatbot" target="_blank">Chatbot</a> · <a href="https://github.com/niharikamg/Automated-Email-Sender" target="_blank">Email Sender</a>
-</details>
-
-
-# 🤝 Let's Connect
-
-Thanks for stopping by! I’m always open to collaborations, technical discussions, or opportunities in cloud and software engineering.
-
-- 📧 Email: [mgniharikaa@gmail.com](mailto:mgniharikaa@gmail.com)  
-- 💼 LinkedIn: [linkedin.com/in/niharika-mg](https://www.linkedin.com/in/niharika-mg)  
-- 🛠 GitHub: [github.com/niharikamg](https://github.com/niharikamg)
-
----
+  <details>
+    <summary><strong>PySpark in Jupyter Notebook</strong></summary>
+    <p>Big data workflows and transformations using PySpark inside a notebook environment.</p>
+    <p>🛠 PySpark · Jupyter</p>
+    <a href="https://github.com/niharikamg/PySpark-in-Jupyter-Notebook" target="_blank">🔗 View project</a>
+  </details>
+</section>
