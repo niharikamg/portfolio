@@ -99,12 +99,12 @@
     <a href="https://github.com/niharikamg/Azure-Data-Factory" target="_blank">🔗 View project</a>
   </details>
 
-  <details>
-    <summary><strong>AWS Flask Web App</strong></summary>
-    <p>Secure web app deployed on EC2 with authentication, upload & word count analysis.</p>
-    <p>🛠 Flask · EC2 · Apache · SQLite</p>
-    <a href="https://github.com/niharikamg/AWS-Flask-Web-App-Project" target="_blank">🔗 View project</a>
-  </details>
+ <details>
+  <summary><strong>AWS Flask Web App</strong></summary>
+  <p>Secure web app deployed on EC2 with authentication, upload & word count analysis.</p>
+  <p>🛠 Flask · EC2 · Apache · SQLite</p>
+  <a href="https://github.com/niharikamg/AWS-Flask-Web-Application-Project" target="_blank">🔗 View project</a>
+</details>
 
   <details>
     <summary><strong>Serverless Deployment on AWS</strong></summary>
@@ -114,18 +114,18 @@
   </details>
 
   <details>
-    <summary><strong>Big Data Weather Analytics</strong></summary>
-    <p>Analyzed 10+ years of weather data using PySpark with trend and extreme condition insights.</p>
-    <p>🛠 PySpark · Jupyter</p>
-    <a href="https://github.com/niharikamg/Big-Data-Weather-Analytics" target="_blank">🔗 View project</a>
-  </details>
+  <summary><strong>Big Data Weather Analytics</strong></summary>
+  <p>Analyzed 10+ years of weather data using PySpark with trend and extreme condition insights.</p>
+  <p>🛠 PySpark · Jupyter</p>
+  <a href="https://github.com/niharikamg/weather-analytics-pyspark-jupyter" target="_blank">🔗 View project</a>
+</details>
 
-  <details>
-    <summary><strong>COVID-19 Analytics with Databricks</strong></summary>
-    <p>Explored vaccination vs. mortality using PySpark and built interactive dashboards.</p>
-    <p>🛠 Python · Databricks · PySpark</p>
-    <a href="https://github.com/niharikamg/COVID-19-Data-Analysis-using-Databricks" target="_blank">🔗 View project</a>
-  </details>
+ <details>
+  <summary><strong>COVID-19 Analytics with Databricks</strong></summary>
+  <p>Explored vaccination vs. mortality using PySpark and built interactive dashboards.</p>
+  <p>🛠 Python · Databricks · PySpark</p>
+  <a href="https://github.com/niharikamg/COVID-19-Data-Analysis-using-Databricks" target="_blank">🔗 View project</a>
+</details>
 
   <details>
     <summary><strong>AI Tools Suite</strong></summary>
