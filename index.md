@@ -73,7 +73,7 @@
 </section>
 
 <section>
-  <h2>👋 About Me</h2>
+  <h2> About Me</h2>
   <p>
     I'm a Software Engineer passionate about building secure, scalable, and intelligent systems. I’ve developed cloud-native applications on AWS and Azure, built AI-powered tools, and optimized full-stack platforms using Docker and Kubernetes.
   </p>
