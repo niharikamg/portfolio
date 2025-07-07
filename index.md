@@ -3,24 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niharika MG | Cloud Engineer & Full-Stack Developer</title>
+    <title>Niharika MG | Next-Gen Cloud Engineer & AI Developer</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
-            color: #e2e8f0;
-            overflow-x: hidden;
-            line-height: 1.6;
+        :root {
+            --primary-bg: #0A0A0F;
+            --secondary-bg: #0F0F1A;
+            --tertiary-bg: #1A1A2E;
+            --accent-cyber: #00F5FF;
+            --accent-neon: #FF0080;
+            --accent-electric: #00FF41;
+            --accent-purple: #8B5CF6;
+            --text-primary: #FFFFFF;
+            --text-secondary: #B4C7E7;
+            --text-muted: #64748B;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(0, 245, 255, 0.2);
+            --glow-cyan: 0 0 30px rgba(0, 245, 255, 0.3);
+            --glow-pink: 0 0 30px rgba(255, 0, 128, 0.3);
+            --glow-green: 0 0 30px rgba(0, 255, 65, 0.3);
         }
 
-        /* Animated background particles */
-        .particles {
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 50%, var(--tertiary-bg) 100%);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            line-height: 1.6;
+            position: relative;
+        }
+
+        /* Futuristic Background Grid */
+        .tech-grid {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: -3;
+            animation: grid-pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes grid-pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        /* Cyber Particles */
+        .cyber-particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            overflow: hidden;
+        }
+
+        .cyber-particle {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: var(--accent-cyber);
+            border-radius: 50%;
+            box-shadow: var(--glow-cyan);
+            animation: cyber-float 8s linear infinite;
+        }
+
+        @keyframes cyber-float {
+            0% {
+                transform: translateY(100vh) translateX(0);
+                opacity: 0;
+            }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% {
+                transform: translateY(-100px) translateX(100px);
+                opacity: 0;
+            }
+        }
+
+        /* Holographic Orbs */
+        .holo-orbs {
             position: fixed;
             top: 0;
             left: 0;
@@ -30,36 +105,69 @@
             overflow: hidden;
         }
 
-        .particle {
+        .holo-orb {
             position: absolute;
-            background: linear-gradient(45deg, #3b82f6, #8b5cf6);
             border-radius: 50%;
-            opacity: 0.1;
-            animation: float 6s ease-in-out infinite;
+            background: conic-gradient(from 0deg, var(--accent-cyber), var(--accent-neon), var(--accent-electric), var(--accent-cyber));
+            filter: blur(60px);
+            opacity: 0.15;
+            animation: holo-drift 20s ease-in-out infinite;
         }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
+        .holo-orb:nth-child(1) {
+            width: 400px;
+            height: 400px;
+            top: 20%;
+            left: 10%;
+            animation-delay: -5s;
+        }
+
+        .holo-orb:nth-child(2) {
+            width: 300px;
+            height: 300px;
+            top: 60%;
+            right: 15%;
+            animation-delay: -12s;
+        }
+
+        .holo-orb:nth-child(3) {
+            width: 500px;
+            height: 500px;
+            bottom: 15%;
+            left: 40%;
+            animation-delay: -8s;
+        }
+
+        @keyframes holo-drift {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            25% { transform: translate(50px, -100px) scale(1.1); }
+            50% { transform: translate(-30px, 80px) scale(0.9); }
+            75% { transform: translate(70px, 40px) scale(1.05); }
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 2rem;
         }
 
-        /* Header */
+        /* Next-Gen Header */
         header {
-            background: rgba(15, 15, 35, 0.9);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             z-index: 1000;
-            padding: 1rem 0;
+            padding: 1.5rem 0;
+            background: rgba(10, 10, 15, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+
+        .header-active {
+            background: rgba(10, 10, 15, 0.95);
+            box-shadow: var(--glow-cyan);
         }
 
         nav {
@@ -69,504 +177,757 @@
         }
 
         .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-cyber), var(--accent-electric));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .logo::before {
+            content: '> ';
+            color: var(--accent-neon);
+            animation: cursor-blink 1s infinite;
+        }
+
+        @keyframes cursor-blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
         }
 
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 2.5rem;
         }
 
         .nav-links a {
+            font-family: 'JetBrains Mono', monospace;
             text-decoration: none;
-            color: #cbd5e1;
+            color: var(--text-secondary);
             font-weight: 500;
+            font-size: 0.9rem;
             transition: all 0.3s ease;
             position: relative;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .nav-links a::after {
+        .nav-links a::before {
             content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: #3b82f6;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        /* Hero Section */
-        .hero {
-            padding: 140px 0 100px;
-            text-align: center;
-            position: relative;
-        }
-
-        .hero-bg {
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--glass-bg), transparent);
+            border: 1px solid transparent;
+            border-radius: 8px;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+
+        .nav-links a:hover::before {
+            opacity: 1;
+            border-color: var(--accent-cyber);
+            box-shadow: var(--glow-cyan);
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-cyber);
+            transform: translateY(-2px);
+        }
+
+        /* Revolutionary Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding: 120px 0;
+        }
+
+        .hero-bg-effect {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, rgba(0, 245, 255, 0.1) 0%, transparent 70%);
+            z-index: -1;
         }
 
         .hero-content {
-            position: relative;
             z-index: 1;
         }
 
-        .profile-container {
+        .profile-tech-frame {
             position: relative;
+            margin-bottom: 3rem;
             display: inline-block;
-            margin-bottom: 2rem;
+        }
+
+        .profile-holo-ring {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, var(--accent-cyber), var(--accent-neon), var(--accent-electric), var(--accent-cyber)) border-box;
+            mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            animation: holo-rotate 8s linear infinite;
+        }
+
+        @keyframes holo-rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
 
         .profile-img {
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            border: 4px solid rgba(59, 130, 246, 0.3);
+            border: 3px solid var(--accent-cyber);
             display: block;
-            margin: 0 auto;
-            transition: all 0.4s ease;
-            box-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
-            animation: profileFloat 6s ease-in-out infinite;
+            transition: all 0.5s ease;
+            box-shadow: 
+                var(--glow-cyan),
+                0 0 60px rgba(0, 245, 255, 0.2),
+                inset 0 0 30px rgba(255, 255, 255, 0.1);
+            animation: profile-pulse 4s ease-in-out infinite;
         }
 
-        @keyframes profileFloat {
+        @keyframes profile-pulse {
+            0%, 100% {
+                box-shadow: 
+                    var(--glow-cyan),
+                    0 0 60px rgba(0, 245, 255, 0.2),
+                    inset 0 0 30px rgba(255, 255, 255, 0.1);
+            }
+            50% {
+                box-shadow: 
+                    0 0 50px rgba(0, 245, 255, 0.6),
+                    0 0 100px rgba(0, 245, 255, 0.3),
+                    inset 0 0 50px rgba(255, 255, 255, 0.2);
+            }
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+            box-shadow: 
+                0 0 80px rgba(0, 245, 255, 0.8),
+                0 0 160px rgba(0, 245, 255, 0.4);
+        }
+
+        .tech-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: linear-gradient(135deg, var(--accent-neon), var(--accent-purple));
+            color: white;
+            padding: 0.5rem;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            animation: badge-float 3s ease-in-out infinite;
+        }
+
+        @keyframes badge-float {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
         }
 
-        .profile-img:hover {
-            transform: scale(1.05) translateY(-5px);
-            box-shadow: 0 0 60px rgba(59, 130, 246, 0.5);
-        }
-
-        .profile-ring {
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            right: -10px;
-            bottom: -10px;
-            border: 2px solid transparent;
-            border-radius: 50%;
-            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #3b82f6);
-            background-size: 200% 200%;
-            animation: rotate 4s linear infinite;
-            z-index: -1;
-        }
-
-        @keyframes rotate {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
         .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #ffffff, #cbd5e1);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, 
+                var(--text-primary) 0%, 
+                var(--accent-cyber) 30%, 
+                var(--accent-neon) 60%, 
+                var(--accent-electric) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
-            animation: fadeInUp 1s ease-out;
-            font-weight: 800;
+            animation: text-hologram 3s ease-in-out infinite;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        @keyframes text-hologram {
+            0%, 100% { 
+                background-position: 0% 50%;
+                filter: hue-rotate(0deg);
+            }
+            50% { 
+                background-position: 100% 50%;
+                filter: hue-rotate(180deg);
+            }
         }
 
         .hero .subtitle {
-            font-size: 1.4rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.2rem;
+            font-weight: 600;
             margin-bottom: 2rem;
-            color: #94a3b8;
-            animation: fadeInUp 1s ease-out 0.2s both;
-            font-weight: 500;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeInUp 1s ease-out 0.3s both;
         }
 
         .hero .description {
             font-size: 1.1rem;
             max-width: 700px;
             margin: 0 auto 3rem;
-            color: #cbd5e1;
+            color: var(--text-secondary);
             line-height: 1.8;
-            animation: fadeInUp 1s ease-out 0.4s both;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            margin-top: 3rem;
             animation: fadeInUp 1s ease-out 0.6s both;
         }
 
-        .social-btn {
+        /* Next-Gen Social Links */
+        .social-tech {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            animation: fadeInUp 1s ease-out 0.9s both;
+        }
+
+        .social-tech-btn {
+            position: relative;
             display: inline-flex;
             align-items: center;
             gap: 0.8rem;
             padding: 1rem 2rem;
-            background: rgba(59, 130, 246, 0.1);
-            color: #3b82f6;
+            background: var(--glass-bg);
+            color: var(--accent-cyber);
             text-decoration: none;
-            border-radius: 50px;
+            border-radius: 12px;
+            font-family: 'JetBrains Mono', monospace;
             font-weight: 600;
+            font-size: 0.9rem;
             transition: all 0.4s ease;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(59, 130, 246, 0.3);
-            position: relative;
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
             overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .social-btn::before {
+        .social-tech-btn::before {
             content: '';
             position: absolute;
             top: 0;
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            background: linear-gradient(90deg, 
+                transparent, 
+                rgba(0, 245, 255, 0.2), 
+                transparent);
             transition: left 0.5s ease;
         }
 
-        .social-btn:hover::before {
+        .social-tech-btn:hover::before {
             left: 100%;
         }
 
-        .social-btn:hover {
-            background: rgba(59, 130, 246, 0.2);
+        .social-tech-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
-            color: #60a5fa;
+            box-shadow: var(--glow-cyan);
+            border-color: var(--accent-cyber);
+            color: var(--text-primary);
         }
 
-        /* Sections */
+        /* Advanced Sections */
         section {
             padding: 100px 0;
             position: relative;
         }
 
-        .section-title {
+        .section-tech-title {
+            font-family: 'JetBrains Mono', monospace;
             text-align: center;
-            font-size: 3rem;
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            font-weight: 800;
             margin-bottom: 4rem;
-            background: linear-gradient(135deg, #ffffff, #cbd5e1);
+            background: linear-gradient(135deg, 
+                var(--text-primary) 0%, 
+                var(--accent-cyber) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             position: relative;
-            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
         }
 
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100px;
-            height: 4px;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-            border-radius: 2px;
+        .section-tech-title::before {
+            content: '[';
+            color: var(--accent-neon);
+            margin-right: 1rem;
         }
 
-        /* About Section */
-        .about-content {
-            max-width: 800px;
+        .section-tech-title::after {
+            content: ']';
+            color: var(--accent-neon);
+            margin-left: 1rem;
+        }
+
+        /* Futuristic About Section */
+        .about-tech {
+            max-width: 900px;
             margin: 0 auto;
             text-align: center;
-            font-size: 1.2rem;
-            color: #cbd5e1;
-            line-height: 1.8;
         }
 
-        .about-content p {
-            margin-bottom: 2rem;
-            padding: 2rem;
-            background: rgba(255, 255, 255, 0.05);
+        .about-tech-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
             border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-
-        .about-content p:hover {
-            background: rgba(255, 255, 255, 0.08);
-            transform: translateY(-5px);
-        }
-
-        /* Projects Grid */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .project-card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            padding: 2.5rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            transition: all 0.4s ease;
+            padding: 4rem;
+            backdrop-filter: blur(30px);
+            box-shadow: 
+                0 20px 40px rgba(0, 0, 0, 0.2),
+                var(--glow-cyan);
+            transition: all 0.5s ease;
             position: relative;
             overflow: hidden;
         }
 
-        .project-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
-        }
-
-        .project-card::after {
+        .about-tech-card::before {
             content: '';
             position: absolute;
             top: -50%;
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            background: conic-gradient(from 0deg, 
+                transparent, 
+                rgba(0, 245, 255, 0.05), 
+                transparent);
+            animation: card-scan 10s linear infinite;
             z-index: -1;
         }
 
-        .project-card:hover::after {
-            opacity: 1;
+        @keyframes card-scan {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
 
-        .project-card:hover {
+        .about-tech-card:hover {
             transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.08);
-            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+            box-shadow: 
+                0 30px 60px rgba(0, 0, 0, 0.3),
+                0 0 80px rgba(0, 245, 255, 0.3);
         }
 
-        .project-title {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #ffffff;
-        }
-
-        .project-description {
-            color: #cbd5e1;
-            line-height: 1.7;
+        .about-tech-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
             margin-bottom: 2rem;
         }
 
-        .project-tech {
+        /* Revolutionary Project Grid */
+        .projects-tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .project-tech-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2.5rem;
+            backdrop-filter: blur(30px);
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .project-tech-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, 
+                var(--accent-cyber), 
+                var(--accent-neon), 
+                var(--accent-electric));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .project-tech-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .project-tech-card::after {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, 
+                transparent, 
+                rgba(0, 245, 255, 0.05), 
+                transparent);
+            transition: top 0.5s ease;
+        }
+
+        .project-tech-card:hover::after {
+            top: 100%;
+        }
+
+        .project-tech-card:hover {
+            transform: translateY(-10px) rotateX(5deg);
+            box-shadow: 
+                0 25px 50px rgba(0, 245, 255, 0.2),
+                var(--glow-cyan);
+            border-color: var(--accent-cyber);
+        }
+
+        .project-tech-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, 
+                var(--text-primary), 
+                var(--accent-cyber));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .project-tech-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .project-tech-stack {
             display: flex;
             flex-wrap: wrap;
             gap: 0.8rem;
             margin-bottom: 2rem;
         }
 
-        .tech-tag {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
-            color: #60a5fa;
+        .tech-stack-tag {
+            background: linear-gradient(135deg, 
+                rgba(0, 245, 255, 0.1), 
+                rgba(255, 0, 128, 0.1));
+            color: var(--accent-cyber);
             padding: 0.5rem 1rem;
-            border-radius: 25px;
-            font-size: 0.85rem;
+            border-radius: 20px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
             font-weight: 600;
-            border: 1px solid rgba(59, 130, 246, 0.3);
+            border: 1px solid var(--glass-border);
             transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .tech-tag:hover {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.3), rgba(139, 92, 246, 0.3));
-            transform: translateY(-2px);
+        .tech-stack-tag:hover {
+            background: linear-gradient(135deg, 
+                var(--accent-cyber), 
+                var(--accent-neon));
+            color: var(--primary-bg);
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: var(--glow-cyan);
         }
 
-        .project-links {
+        .project-tech-links {
             display: flex;
             gap: 1rem;
             flex-wrap: wrap;
         }
 
-        .project-link {
+        .project-tech-link {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            color: #3b82f6;
+            color: var(--accent-cyber);
             text-decoration: none;
+            font-family: 'JetBrains Mono', monospace;
             font-weight: 600;
+            font-size: 0.9rem;
             transition: all 0.3s ease;
-            padding: 0.5rem 1rem;
+            padding: 0.8rem 1.5rem;
             border-radius: 10px;
-            background: rgba(59, 130, 246, 0.1);
-            border: 1px solid rgba(59, 130, 246, 0.3);
+            background: rgba(0, 245, 255, 0.1);
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(10px);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .project-link:hover {
-            color: #60a5fa;
-            background: rgba(59, 130, 246, 0.2);
+        .project-tech-link:hover {
+            background: var(--accent-cyber);
+            color: var(--primary-bg);
             transform: translateY(-2px);
+            box-shadow: var(--glow-cyan);
+            border-color: var(--accent-cyber);
         }
 
-        /* Collapsible Projects */
-        .projects-section {
-            margin-bottom: 4rem;
+        /* Advanced Collapsible Projects */
+        .projects-tech-collapsible {
+            margin-top: 5rem;
         }
 
-        .collapsible-projects {
-            margin-top: 3rem;
+        .section-tech-subtitle {
+            font-family: 'JetBrains Mono', monospace;
+            text-align: center;
+            color: var(--text-secondary);
+            margin: 5rem 0 3rem;
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, 
+                var(--text-secondary), 
+                var(--accent-cyber));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
-        .project-toggle {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 15px;
-            margin-bottom: 1rem;
+        .project-tech-toggle {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
             overflow: hidden;
+            backdrop-filter: blur(30px);
             transition: all 0.3s ease;
         }
 
-        .project-toggle:hover {
-            background: rgba(255, 255, 255, 0.08);
+        .project-tech-toggle:hover {
+            background: rgba(0, 245, 255, 0.05);
+            box-shadow: var(--glow-cyan);
+            border-color: var(--accent-cyber);
         }
 
-        .project-summary {
+        .project-tech-summary {
             padding: 1.5rem 2rem;
             cursor: pointer;
-            font-weight: 600;
-            color: #ffffff;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--text-primary);
             display: flex;
             justify-content: space-between;
             align-items: center;
             transition: all 0.3s ease;
+            position: relative;
         }
 
-        .project-summary:hover {
-            color: #3b82f6;
-        }
-
-        .project-summary::after {
-            content: '+';
-            font-size: 1.5rem;
-            color: #3b82f6;
+        .project-tech-summary::before {
+            content: '>';
+            color: var(--accent-cyber);
+            margin-right: 1rem;
             transition: transform 0.3s ease;
         }
 
-        .project-toggle[open] .project-summary::after {
-            transform: rotate(45deg);
+        .project-tech-toggle[open] .project-tech-summary::before {
+            transform: rotate(90deg);
         }
 
-        .project-details {
+        .project-tech-summary:hover {
+            color: var(--accent-cyber);
+        }
+
+        .project-tech-summary::after {
+            content: '[+]';
+            font-size: 1rem;
+            color: var(--accent-neon);
+            transition: all 0.3s ease;
+        }
+
+        .project-tech-toggle[open] .project-tech-summary::after {
+            content: '[-]';
+            color: var(--accent-electric);
+        }
+
+        .project-tech-details {
             padding: 0 2rem 2rem;
-            color: #cbd5e1;
+            color: var(--text-secondary);
             line-height: 1.7;
+            font-size: 1rem;
+            border-top: 1px solid var(--glass-border);
         }
 
-        .project-details p {
-            margin-bottom: 1rem;
-        }
-
-        /* Skills Section */
-        .skills-container {
+        /* Next-Gen Skills Section */
+        .skills-tech-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
             margin-top: 4rem;
         }
 
-        .skill-category {
-            background: rgba(255, 255, 255, 0.05);
+        .skill-tech-category {
+            background: var(--glass-bg);
             padding: 3rem 2rem;
-            border-radius: 20px;
+            border-radius: 16px;
             text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            transition: all 0.4s ease;
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(30px);
+            transition: all 0.5s ease;
             position: relative;
             overflow: hidden;
         }
 
-        .skill-category::before {
+        .skill-tech-category::before {
             content: '';
             position: absolute;
             top: -50%;
             left: -50%;
             width: 200%;
             height: 200%;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            background: conic-gradient(from 0deg, 
+                transparent, 
+                rgba(0, 245, 255, 0.05), 
+                transparent);
+            animation: skill-scan 15s linear infinite;
             z-index: -1;
         }
 
-        .skill-category:hover::before {
-            opacity: 1;
+        @keyframes skill-scan {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
 
-        .skill-category:hover {
-            transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.08);
+        .skill-tech-category:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: var(--glow-cyan);
+            border-color: var(--accent-cyber);
         }
 
-        .skill-icon {
+        .skill-tech-icon {
             font-size: 4rem;
-            margin-bottom: 1.5rem;
-            filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.5));
+            margin-bottom: 2rem;
+            filter: drop-shadow(var(--glow-cyan));
+            animation: icon-tech-float 4s ease-in-out infinite;
         }
 
-        .skill-category h3 {
-            font-size: 1.4rem;
-            margin-bottom: 1.5rem;
-            color: #ffffff;
+        @keyframes icon-tech-float {
+            0%, 100% { 
+                transform: translateY(0px);
+                filter: drop-shadow(var(--glow-cyan));
+            }
+            50% { 
+                transform: translateY(-10px);
+                filter: drop-shadow(0 0 40px var(--accent-cyber));
+            }
+        }
+
+        .skill-tech-category h3 {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: var(--text-primary);
             font-weight: 700;
+            background: linear-gradient(135deg, 
+                var(--text-primary), 
+                var(--accent-cyber));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .skill-list {
-            color: #cbd5e1;
+        .skill-tech-list {
+            color: var(--text-secondary);
             line-height: 2;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
-        /* Footer */
+        /* Cyber Footer */
         footer {
-            background: rgba(15, 15, 35, 0.8);
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #cbd5e1;
+            background: linear-gradient(135deg, 
+                rgba(10, 10, 15, 0.95), 
+                rgba(15, 15, 26, 0.95));
+            border-top: 2px solid var(--accent-cyber);
+            color: var(--text-secondary);
             text-align: center;
             padding: 3rem 0;
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(30px);
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, 
+                transparent, 
+                var(--accent-cyber), 
+                var(--accent-neon), 
+                var(--accent-electric), 
+                transparent);
+            animation: footer-scan 3s ease-in-out infinite;
+        }
+
+        @keyframes footer-scan {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
         }
 
         footer a {
-            color: #3b82f6;
+            color: var(--accent-cyber);
             text-decoration: none;
-            transition: color 0.3s ease;
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         footer a:hover {
-            color: #60a5fa;
+            color: var(--accent-electric);
+            text-shadow: var(--glow-green);
         }
 
-        /* Animations */
+        footer p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Tech Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(30px);
+                transform: translateY(50px);
             }
             to {
                 opacity: 1;
@@ -574,62 +935,151 @@
             }
         }
 
-        .fade-in {
-            animation: fadeInUp 0.8s ease-out forwards;
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero .subtitle {
-                font-size: 1.1rem;
-            }
-
-            .social-links {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .project-card {
-                padding: 2rem;
-            }
-
-            .skills-container {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Scroll animations */
-        .scroll-reveal {
+        .scroll-tech-reveal {
             opacity: 0;
             transform: translateY(50px);
             transition: all 0.8s ease;
         }
 
-        .scroll-reveal.revealed {
+        .scroll-tech-reveal.revealed {
             opacity: 1;
             transform: translateY(0);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .projects-tech-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .skills-tech-container {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 0 1rem;
+            }
+
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .social-tech {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .project-tech-card,
+            .skill-tech-category {
+                padding: 2rem 1.5rem;
+            }
+
+            .about-tech-card {
+                padding: 2.5rem 2rem;
+            }
+
+            .project-tech-summary {
+                padding: 1.5rem;
+                font-size: 1rem;
+            }
+
+            .project-tech-details {
+                padding: 0 1.5rem 2rem;
+            }
+
+            section {
+                padding: 80px 0;
+            }
+        }
+
+        /* Cyber Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--secondary-bg);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, 
+                var(--accent-cyber), 
+                var(--accent-neon));
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, 
+                var(--accent-neon), 
+                var(--accent-electric));
+        }
+
+        /* Loading Screen */
+        .tech-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+
+        .tech-loader.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loader-tech-ring {
+            width: 100px;
+            height: 100px;
+            border: 3px solid transparent;
+            border-top: 3px solid var(--accent-cyber);
+            border-radius: 50%;
+            animation: tech-spin 1s linear infinite;
+            box-shadow: var(--glow-cyan);
+        }
+
+        @keyframes tech-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
     </style>
 </head>
 <body>
-    <!-- Animated Background -->
-    <div class="particles" id="particles"></div>
+    <!-- Tech Loading Screen -->
+    <div class="tech-loader" id="loader">
+        <div class="loader-tech-ring"></div>
+    </div>
 
-    <header>
+    <!-- Futuristic Background Effects -->
+    <div class="tech-grid"></div>
+    <div class="cyber-particles" id="cyberParticles"></div>
+    <div class="holo-orbs">
+        <div class="holo-orb"></div>
+        <div class="holo-orb"></div>
+        <div class="holo-orb"></div>
+    </div>
+
+    <header id="header">
         <nav class="container">
-            <div class="logo">Niharika MG</div>
+            <div class="logo">Niharika.MG</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -641,26 +1091,27 @@
     </header>
 
     <section id="home" class="hero">
-        <div class="hero-bg"></div>
+        <div class="hero-bg-effect"></div>
         <div class="container">
             <div class="hero-content">
-                <div class="profile-container">
-                    <div class="profile-ring"></div>
+                <div class="profile-tech-frame">
+                    <div class="profile-holo-ring"></div>
                     <img src="https://github.com/niharikamg/portfolio/blob/main/Profile-Picture.jpg?raw=true" alt="Niharika MG" class="profile-img">
+                    <div class="tech-badge">⚡</div>
                 </div>
-                <h1>Hi there, I'm <span style="background: linear-gradient(135deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Niharika MG</span></h1>
-                <p class="subtitle">Cloud Engineer • Full-Stack Developer • DevOps Enthusiast</p>
+                <h1>Niharika MG</h1>
+                <p class="subtitle">Next-Gen Cloud Engineer • AI Developer • DevOps Architect</p>
                 <p class="description">
-                    I'm a Software Engineer passionate about building secure, scalable, and intelligent systems. I've developed cloud-native applications on AWS and Azure, built AI-powered tools, and optimized full-stack platforms using Docker and Kubernetes.
+                    Engineering the future with cutting-edge cloud-native solutions, revolutionary AI systems, and enterprise-scale infrastructure. Specializing in AWS/Azure architectures, advanced machine learning, and next-generation DevOps automation.
                 </p>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/niharika-mg" class="social-btn" target="_blank">
-                        💼 LinkedIn
+                <div class="social-tech">
+                    <a href="https://www.linkedin.com/in/niharika-mg" class="social-tech-btn" target="_blank">
+                        🔗 LinkedIn
                     </a>
-                    <a href="mailto:mgniharikaa@gmail.com" class="social-btn" target="_blank">
-                        ✉️ Email
+                    <a href="mailto:mgniharikaa@gmail.com" class="social-tech-btn" target="_blank">
+                        📧 Contact
                     </a>
-                    <a href="https://niharikamg.github.io/portfolio/" class="social-btn" target="_blank">
+                    <a href="https://niharikamg.github.io/portfolio/" class="social-tech-btn" target="_blank">
                         🌐 Portfolio
                     </a>
                 </div>
@@ -670,245 +1121,246 @@
 
     <section id="about">
         <div class="container">
-            <h2 class="section-title scroll-reveal">About Me</h2>
-            <div class="about-content scroll-reveal">
-                <p>
-                    I'm a Software Engineer passionate about building secure, scalable, and intelligent systems. I've developed cloud-native applications on AWS and Azure, built AI-powered tools, and optimized full-stack platforms using Docker and Kubernetes.
-                </p>
-                <p>
-                    Whether it's enabling faster data insights, building secure AI models, or designing cloud services that scale — I focus on creating impactful, resilient technology. Explore my projects below!
-                </p>
+            <h2 class="section-tech-title scroll-tech-reveal">About</h2>
+            <div class="about-tech scroll-tech-reveal">
+                <div class="about-tech-card">
+                    <p class="about-tech-text">
+                        Next-generation Software Engineer specializing in architecting secure, scalable, and intelligent systems that push the boundaries of what's possible. Expert in cloud-native development across AWS and Azure, with deep expertise in AI/ML solutions and enterprise DevOps automation.
+                    </p>
+                    <p class="about-tech-text">
+                        From real-time data processing pipelines to blockchain-based decentralized applications, I build technology that scales infinitely and delivers transformational business impact. Experience the future of software engineering.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="projects">
         <div class="container">
-            <h2 class="section-title scroll-reveal">Spotlight Projects</h2>
-            <div class="projects-grid scroll-reveal">
-                <div class="project-card">
-                    <h3 class="project-title">CloudOps Insight – Cloud Monitoring Dashboard</h3>
-                    <p class="project-description">
-                        Prometheus + Grafana + Kubernetes monitoring stack with Terraform automation for comprehensive infrastructure monitoring and alerting.
+            <h2 class="section-tech-title scroll-tech-reveal">Projects</h2>
+            <div class="projects-tech-grid scroll-tech-reveal">
+                <div class="project-tech-card">
+                    <h3 class="project-tech-title">CloudOps Insight Dashboard</h3>
+                    <p class="project-tech-description">
+                        Next-gen monitoring platform combining Prometheus, Grafana, and Kubernetes with automated Terraform deployment. Features real-time alerting, predictive analytics, and intelligent resource optimization.
                     </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Kubernetes</span>
-                        <span class="tech-tag">Prometheus</span>
-                        <span class="tech-tag">Grafana</span>
-                        <span class="tech-tag">Terraform</span>
-                        <span class="tech-tag">GitHub Actions</span>
+                    <div class="project-tech-stack">
+                        <span class="tech-stack-tag">Kubernetes</span>
+                        <span class="tech-stack-tag">Prometheus</span>
+                        <span class="tech-stack-tag">Grafana</span>
+                        <span class="tech-stack-tag">Terraform</span>
+                        <span class="tech-stack-tag">CI/CD</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/niharikamg/CloudOps-Insight" class="project-link" target="_blank">
-                            🔗 View Project
+                    <div class="project-tech-links">
+                        <a href="https://github.com/niharikamg/CloudOps-Insight" class="project-tech-link" target="_blank">
+                            View Code
                         </a>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <h3 class="project-title">Azure Data Factory – ETL Pipeline</h3>
-                    <p class="project-description">
-                        ETL automation using ADF, Blob Storage, SQL DB and Azure Functions for real-time reporting and seamless data processing workflows.
+                <div class="project-tech-card">
+                    <h3 class="project-tech-title">Azure ETL Pipeline</h3>
+                    <p class="project-tech-description">
+                        Advanced data processing pipeline using Azure Data Factory with real-time streaming, automated scaling, and intelligent error handling. Processes millions of records with zero downtime.
                     </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Azure Data Factory</span>
-                        <span class="tech-tag">SQL</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Azure Functions</span>
+                    <div class="project-tech-stack">
+                        <span class="tech-stack-tag">Azure DF</span>
+                        <span class="tech-stack-tag">SQL</span>
+                        <span class="tech-stack-tag">Python</span>
+                        <span class="tech-stack-tag">Functions</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/niharikamg/Azure-Data-Factory" class="project-link" target="_blank">
-                            🔗 View Project
+                    <div class="project-tech-links">
+                        <a href="https://github.com/niharikamg/Azure-Data-Factory" class="project-tech-link" target="_blank">
+                            View Code
                         </a>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <h3 class="project-title">Decentralized AI Model Marketplace</h3>
-                    <p class="project-description">
-                        Blockchain-based marketplace for renting & uploading ML models using Ethereum smart contracts and IPFS for decentralized storage.
+                <div class="project-tech-card">
+                    <h3 class="project-tech-title">Decentralized AI Marketplace</h3>
+                    <p class="project-tech-description">
+                        Revolutionary blockchain-based platform for AI model trading using Ethereum smart contracts, IPFS storage, and Web3 integration. Enables secure, decentralized AI commerce.
                     </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">Solidity</span>
-                        <span class="tech-tag">Web3.js</span>
-                        <span class="tech-tag">IPFS</span>
+                    <div class="project-tech-stack">
+                        <span class="tech-stack-tag">React</span>
+                        <span class="tech-stack-tag">Solidity</span>
+                        <span class="tech-stack-tag">Web3</span>
+                        <span class="tech-stack-tag">IPFS</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://github.com/niharikamg/Decentralized-AI-Model-Marketplace" class="project-link" target="_blank">
-                            🔗 View Project
+                    <div class="project-tech-links">
+                        <a href="https://github.com/niharikamg/Decentralized-AI-Model-Marketplace" class="project-tech-link" target="_blank">
+                            View Code
                         </a>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <h3 class="project-title">Interactive County Data Visualization</h3>
-                    <p class="project-description">
-                        D3.js dashboard with TopoJSON for county-level health & socioeconomic data visualization with interactive mapping features.
+                <div class="project-tech-card">
+                    <h3 class="project-tech-title">Interactive Data Visualization</h3>
+                    <p class="project-tech-description">
+                        Advanced D3.js dashboard with TopoJSON integration for real-time county-level data visualization. Features interactive mapping, dynamic filtering, and responsive design.
                     </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">D3.js</span>
-                        <span class="tech-tag">TopoJSON</span>
-                        <span class="tech-tag">Data Visualization</span>
+                    <div class="project-tech-stack">
+                        <span class="tech-stack-tag">D3.js</span>
+                        <span class="tech-stack-tag">TopoJSON</span>
+                        <span class="tech-stack-tag">JavaScript</span>
+                        <span class="tech-stack-tag">SVG</span>
                     </div>
-                    <div class="project-links">
-                        <a href="https://niharikamg.github.io/Visual-Interfrace" class="project-link" target="_blank">
-                            🔗 Live Demo
+                    <div class="project-tech-links">
+                        <a href="https://niharikamg.github.io/Visual-Interfrace" class="project-tech-link" target="_blank">
+                            Live Demo
                         </a>
-                        <a href="https://github.com/niharikamg/Visual-Interfrace" class="project-link" target="_blank">
-                            📂 Repository
+                        <a href="https://github.com/niharikamg/Visual-Interfrace" class="project-tech-link" target="_blank">
+                            View Code
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="collapsible-projects scroll-reveal">
-                <h3 style="text-align: center; color: #cbd5e1; margin: 4rem 0 2rem; font-size: 2rem;">More Projects</h3>
+            <div class="projects-tech-collapsible scroll-tech-reveal">
+                <h3 class="section-tech-subtitle">Additional Projects</h3>
                 
-                <details class="project-toggle">
-                    <summary class="project-summary">AWS Flask Web App</summary>
-                    <div class="project-details">
-                        <p>Secure web app deployed on EC2 with authentication, upload & word count analysis.</p>
-                        <p><strong>Tech Stack:</strong> Flask · EC2 · Apache · SQLite</p>
-                        <a href="https://github.com/niharikamg/AWS-Flask-Web-Application-Project" class="project-link" target="_blank">🔗 View project</a>
+                <details class="project-tech-toggle">
+                    <summary class="project-tech-summary">AWS Flask Application</summary>
+                    <div class="project-tech-details">
+                        <p>Enterprise-grade web application with advanced authentication, file processing, and analytics. Deployed on EC2 with auto-scaling and load balancing.</p>
+                        <p><strong>Tech Stack:</strong> Flask • EC2 • Apache • SQLite • AWS</p>
+                        <a href="https://github.com/niharikamg/AWS-Flask-Web-Application-Project" class="project-tech-link" target="_blank">View Code</a>
                     </div>
                 </details>
 
-                <details class="project-toggle">
-                    <summary class="project-summary">Serverless Deployment on AWS</summary>
-                    <div class="project-details">
-                        <p>Built serverless event-driven services using Lambda and API Gateway with Docker.</p>
-                        <p><strong>Tech Stack:</strong> AWS Lambda · Docker · GitHub Actions</p>
-                        <a href="https://github.com/niharikamg/Serverless-Deployment-AWS" class="project-link" target="_blank">🔗 View project</a>
+                <details class="project-tech-toggle">
+                    <summary class="project-tech-summary">Serverless Architecture</summary>
+                    <div class="project-tech-details">
+                        <p>Event-driven microservices using AWS Lambda, API Gateway, and Docker. Features automatic scaling, cost optimization, and zero-downtime deployments.</p>
+                        <p><strong>Tech Stack:</strong> Lambda • Docker • API Gateway • CI/CD</p>
+                        <a href="https://github.com/niharikamg/Serverless-Deployment-AWS" class="project-tech-link" target="_blank">View Code</a>
                     </div>
                 </details>
 
-                <details class="project-toggle">
-                    <summary class="project-summary">Big Data Weather Analytics</summary>
-                    <div class="project-details">
-                        <p>Analyzed 10+ years of weather data using PySpark with trend and extreme condition insights.</p>
-                        <p><strong>Tech Stack:</strong> PySpark · Jupyter</p>
-                        <a href="https://github.com/niharikamg/weather-analytics-pyspark-jupyter" class="project-link" target="_blank">🔗 View project</a>
+                <details class="project-tech-toggle">
+                    <summary class="project-tech-summary">Big Data Weather Analytics</summary>
+                    <div class="project-tech-details">
+                        <p>Large-scale weather data analysis using PySpark with machine learning for pattern recognition and climate prediction modeling.</p>
+                        <p><strong>Tech Stack:</strong> PySpark • Jupyter • ML • Big Data</p>
+                        <a href="https://github.com/niharikamg/weather-analytics-pyspark-jupyter" class="project-tech-link" target="_blank">View Code</a>
                     </div>
                 </details>
 
-                <details class="project-toggle">
-                    <summary class="project-summary">COVID-19 Analytics with Databricks</summary>
-                    <div class="project-details">
-                        <p>Explored vaccination vs. mortality using PySpark and built interactive dashboards.</p>
-                        <p><strong>Tech Stack:</strong> Python · Databricks · PySpark</p>
-                        <a href="https://github.com/niharikamg/COVID-19-Data-Analysis-using-Databricks" class="project-link" target="_blank">🔗 View project</a>
+                <details class="project-tech-toggle">
+                    <summary class="project-tech-summary">COVID-19 Analytics Platform</summary>
+                    <div class="project-tech-details">
+                        <p>Comprehensive data analysis platform using Databricks for vaccination tracking, mortality analysis, and interactive reporting dashboards.</p>
+                        <p><strong>Tech Stack:</strong> Databricks • PySpark • Python • Analytics</p>
+                        <a href="https://github.com/niharikamg/COVID-19-Data-Analysis-using-Databricks" class="project-tech-link" target="_blank">View Code</a>
                     </div>
                 </details>
 
-                <details class="project-toggle">
-                    <summary class="project-summary">AI Tools Suite</summary>
-                    <div class="project-details">
-                        <p>Includes resume analyzer, recommender, finance manager & threat detector with Flask + ML.</p>
-                        <p><strong>Tech Stack:</strong> Flask · Spring Boot · ML · PostgreSQL</p>
-                        <a href="https://github.com/niharikamg?tab=repositories&q=AI" class="project-link" target="_blank">🔗 View suite</a>
+                <details class="project-tech-toggle">
+                    <summary class="project-tech-summary">AI Tools Suite</summary>
+                    <div class="project-tech-details">
+                        <p>Comprehensive AI toolkit including resume analysis, job recommendations, financial management, and threat detection with advanced ML algorithms.</p>
+                        <p><strong>Tech Stack:</strong> Flask • Spring Boot • ML • PostgreSQL</p>
+                        <a href="https://github.com/niharikamg?tab=repositories&q=AI" class="project-tech-link" target="_blank">View Suite</a>
                     </div>
                 </details>
 
-                <details class="project-toggle">
-                    <summary class="project-summary">GCP Chatbot for Student Services</summary>
-                    <div class="project-details">
-                        <p>Intent-based Q&A chatbot using Dialogflow, hosted via GCP App & Compute Engine.</p>
-                        <p><strong>Tech Stack:</strong> Dialogflow · Python · GCP</p>
-                        <a href="https://github.com/niharikamg/Google-Cloud-Platform-GCP-Chatbot-Project" class="project-link" target="_blank">🔗 View project</a>
+                <details class="project-tech-toggle">
+                    <summary class="project-tech-summary">GCP Intelligent Chatbot</summary>
+                    <div class="project-tech-details">
+                        <p>Advanced conversational AI using Dialogflow with natural language understanding, context awareness, and multi-platform deployment.</p>
+                        <p><strong>Tech Stack:</strong> Dialogflow • Python • GCP • NLP</p>
+                        <a href="https://github.com/niharikamg/Google-Cloud-Platform-GCP-Chatbot-Project" class="project-tech-link" target="_blank">View Code</a>
                     </div>
                 </details>
             </div>
 
-            <div class="collapsible-projects scroll-reveal">
-                <h3 style="text-align: center; color: #cbd5e1; margin: 4rem 0 2rem; font-size: 2rem;">🧩 Alternative Projects</h3>
+            <div class="projects-tech-collapsible scroll-tech-reveal">
+                <h3 class="section-tech-subtitle">Specialized Solutions</h3>
                 
-                <details class="project-toggle">
-                    <summary class="project-summary">AI-Powered Code Auto Refactoring System</summary>
-                    <div class="project-details">
-                        <p>Analyzes and restructures Python code for better performance using AST and ML.</p>
-                        <p><strong>Tech Stack:</strong> Python · AST · NLP</p>
-                        <a href="https://github.com/niharikamg/AI-Powered-Code-Auto-Refactoring-System" class="project-link" target="_blank">🔗 View project</a>
+                <details class="project-tech-toggle">
+                    <summary class="project-tech-summary">AI Code Refactoring Engine</summary>
+                    <div class="project-tech-details">
+                        <p>Intelligent code optimization system using AST analysis and machine learning to automatically improve code performance, readability, and maintainability.</p>
+                        <p><strong>Tech Stack:</strong> Python • AST • ML • NLP</p>
+                        <a href="https://github.com/niharikamg/AI-Powered-Code-Auto-Refactoring-System" class="project-tech-link" target="_blank">View Code</a>
                     </div>
                 </details>
 
-                <details class="project-toggle">
-                    <summary class="project-summary">Blockchain-Based Secure Authentication System</summary>
-                    <div class="project-details">
-                        <p>Decentralized login/auth using Ethereum smart contracts and Web3.js — no central servers.</p>
-                        <p><strong>Tech Stack:</strong> Solidity · Web3.js · Ethereum</p>
-                        <a href="https://github.com/niharikamg/Blockchain-Based-Secure-Authentication-System" class="project-link" target="_blank">🔗 View project</a>
+                <details class="project-tech-toggle">
+                    <summary class="project-tech-summary">Blockchain Authentication</summary>
+                    <div class="project-tech-details">
+                        <p>Decentralized authentication system eliminating traditional servers using Ethereum smart contracts and cryptographic verification.</p>
+                        <p><strong>Tech Stack:</strong> Solidity • Web3.js • Ethereum • Crypto</p>
+                        <a href="https://github.com/niharikamg/Blockchain-Based-Secure-Authentication-System" class="project-tech-link" target="_blank">View Code</a>
                     </div>
                 </details>
 
-                <details class="project-toggle">
-                    <summary class="project-summary">Resume Analyzer & Job Recommender</summary>
-                    <div class="project-details">
-                        <p>NLP-based systems for resume scoring and job matching with semantic similarity.</p>
-                        <p><strong>Tech Stack:</strong> Python · Java · NLP</p>
-                        <a href="https://github.com/niharikamg/AI-Based-Resume-Analyzer" class="project-link" target="_blank">Resume Analyzer</a>
-                        <a href="https://github.com/niharikamg/AI-Based-Job-Recommendation-System" class="project-link" target="_blank">Job Recommender</a>
+                <details class="project-tech-toggle">
+                    <summary class="project-tech-summary">AI Resume & Job Matching</summary>
+                    <div class="project-tech-details">
+                        <p>Advanced NLP system for intelligent resume analysis and job matching using semantic similarity, skill extraction, and recommendation algorithms.</p>
+                        <p><strong>Tech Stack:</strong> Python • Java • NLP • ML</p>
+                        <a href="https://github.com/niharikamg/AI-Based-Resume-Analyzer" class="project-tech-link" target="_blank">Resume Analyzer</a>
+                        <a href="https://github.com/niharikamg/AI-Based-Job-Recommendation-System" class="project-tech-link" target="_blank">Job Recommender</a>
                     </div>
                 </details>
 
-                <details class="project-toggle">
-                    <summary class="project-summary">AI-Powered Code Review Bot</summary>
-                    <div class="project-details">
-                        <p>Automated tool that reviews code for quality and optimization using machine learning.</p>
-                        <p><strong>Tech Stack:</strong> Python · AI · Static Analysis</p>
-                        <a href="https://github.com/niharikamg/AI-Powered-Code-Review-Bot" class="project-link" target="_blank">🔗 View project</a>
+                <details class="project-tech-toggle">
+                    <summary class="project-tech-summary">Intelligent Code Review Bot</summary>
+                    <div class="project-tech-details">
+                        <p>Automated code quality assessment using machine learning for bug detection, security analysis, and performance optimization recommendations.</p>
+                        <p><strong>Tech Stack:</strong> Python • AI • Static Analysis • ML</p>
+                        <a href="https://github.com/niharikamg/AI-Powered-Code-Review-Bot" class="project-tech-link" target="_blank">View Code</a>
                     </div>
                 </details>
 
-                <details class="project-toggle">
-                    <summary class="project-summary">AI-Powered Financial Fraud Detection</summary>
-                    <div class="project-details">
-                        <p>Uses machine learning to detect suspicious financial transactions.</p>
-                        <p><strong>Tech Stack:</strong> Python · ML · Fraud Detection</p>
-                        <a href="https://github.com/niharikamg/AI-Powered-Financial-Fraud-Detection-System" class="project-link" target="_blank">🔗 View project</a>
+                <details class="project-tech-toggle">
+                    <summary class="project-tech-summary">Financial Fraud Detection AI</summary>
+                    <div class="project-tech-details">
+                        <p>Real-time fraud detection system using advanced machine learning algorithms for anomaly detection and risk assessment in financial transactions.</p>
+                        <p><strong>Tech Stack:</strong> Python • ML • Fraud Detection • Real-time</p>
+                        <a href="https://github.com/niharikamg/AI-Powered-Financial-Fraud-Detection-System" class="project-tech-link" target="_blank">View Code</a>
                     </div>
                 </details>
 
-                <details class="project-toggle">
-                    <summary class="project-summary">Trading Bots (Classic & AI)</summary>
-                    <div class="project-details">
-                        <p>Cryptocurrency bots — one rule-based, one AI-enhanced — that auto-execute trades.</p>
-                        <p><strong>Tech Stack:</strong> Python · ML · APIs</p>
-                        <a href="https://github.com/niharikamg/Trading-Bot-Full-Project" class="project-link" target="_blank">Classic Bot</a>
-                        <a href="https://github.com/niharikamg/AI-Powered-Crypto-Trading-Bot" class="project-link" target="_blank">AI Bot</a>
+                <details class="project-tech-toggle">
+                    <summary class="project-tech-summary">Crypto Trading AI Suite</summary>
+                    <div class="project-tech-details">
+                        <p>Sophisticated algorithmic trading systems with both rule-based and AI-enhanced strategies for automated cryptocurrency trading and portfolio management.</p>
+                        <p><strong>Tech Stack:</strong> Python • ML • APIs • Algorithms</p>
+                        <a href="https://github.com/niharikamg/Trading-Bot-Full-Project" class="project-tech-link" target="_blank">Classic Bot</a>
+                        <a href="https://github.com/niharikamg/AI-Powered-Crypto-Trading-Bot" class="project-tech-link" target="_blank">AI Bot</a>
                     </div>
                 </details>
 
-                <details class="project-toggle">
-                    <summary class="project-summary">Chatbot & Email Automation</summary>
-                    <div class="project-details">
-                        <p>A chatbot with NLTK and a script to send automated emails with attachments.</p>
-                        <p><strong>Tech Stack:</strong> Python · NLTK · smtplib</p>
-                        <a href="https://github.com/niharikamg/chatbot" class="project-link" target="_blank">Chatbot</a>
-                        <a href="https://github.com/niharikamg/Automated-Email-Sender" class="project-link" target="_blank">Email Sender</a>
+                <details class="project-tech-toggle">
+                    <summary class="project-tech-summary">Intelligent Automation Suite</summary>
+                    <div class="project-tech-details">
+                        <p>Advanced chatbot with NLP capabilities and automated email system with smart attachment handling and scheduling features.</p>
+                        <p><strong>Tech Stack:</strong> Python • NLTK • NLP • Automation</p>
+                        <a href="https://github.com/niharikamg/chatbot" class="project-tech-link" target="_blank">Chatbot</a>
+                        <a href="https://github.com/niharikamg/Automated-Email-Sender" class="project-tech-link" target="_blank">Email System</a>
                     </div>
                 </details>
 
-                <details class="project-toggle">
-                    <summary class="project-summary">File Utilities & CLI Tools</summary>
-                    <div class="project-details">
-                        <p>Includes a PDF merger, task manager, GitHub repo analyzer, and folder organizer — all terminal-based.</p>
-                        <p><strong>Tech Stack:</strong> Python · Shell Scripting</p>
-                        <a href="https://github.com/niharikamg/PDF-Merger-CLI" class="project-link" target="_blank">PDF Merger</a>
-                        <a href="https://github.com/niharikamg/GitHub-Repo-Analyzer-CLI" class="project-link" target="_blank">Repo Analyzer</a>
-                        <a href="https://github.com/niharikamg/task-manager-cli" class="project-link" target="_blank">Task Manager</a>
-                        <a href="https://github.com/niharikamg/organizer" class="project-link" target="_blank">File Organizer</a>
+                <details class="project-tech-toggle">
+                    <summary class="project-tech-summary">Developer Tools Suite</summary>
+                    <div class="project-tech-details">
+                        <p>Professional command-line utilities including PDF processing, task management, repository analysis, and file organization with automation features.</p>
+                        <p><strong>Tech Stack:</strong> Python • CLI • Shell Scripting • Automation</p>
+                        <a href="https://github.com/niharikamg/PDF-Merger-CLI" class="project-tech-link" target="_blank">PDF Tools</a>
+                        <a href="https://github.com/niharikamg/GitHub-Repo-Analyzer-CLI" class="project-tech-link" target="_blank">Repo Analyzer</a>
+                        <a href="https://github.com/niharikamg/task-manager-cli" class="project-tech-link" target="_blank">Task Manager</a>
+                        <a href="https://github.com/niharikamg/organizer" class="project-tech-link" target="_blank">File Organizer</a>
                     </div>
                 </details>
 
-                <details class="project-toggle">
-                    <summary class="project-summary">PySpark in Jupyter Notebook</summary>
-                    <div class="project-details">
-                        <p>Big data workflows and transformations using PySpark inside a notebook environment.</p>
-                        <p><strong>Tech Stack:</strong> PySpark · Jupyter</p>
-                        <a href="https://github.com/niharikamg/PySpark-in-Jupyter-Notebook" class="project-link" target="_blank">🔗 View project</a>
+                <details class="project-tech-toggle">
+                    <summary class="project-tech-summary">Big Data Processing Platform</summary>
+                    <div class="project-tech-details">
+                        <p>Comprehensive big data processing environment using PySpark in Jupyter with advanced analytics, visualization, and distributed computing capabilities.</p>
+                        <p><strong>Tech Stack:</strong> PySpark • Jupyter • Big Data • Analytics</p>
+                        <a href="https://github.com/niharikamg/PySpark-in-Jupyter-Notebook" class="project-tech-link" target="_blank">View Code</a>
                     </div>
                 </details>
             </div>
@@ -917,27 +1369,27 @@
 
     <section id="skills">
         <div class="container">
-            <h2 class="section-title scroll-reveal">Technical Skills</h2>
-            <div class="skills-container scroll-reveal">
-                <div class="skill-category">
-                    <div class="skill-icon">☁️</div>
-                    <h3>Cloud Platforms</h3>
-                    <p class="skill-list">AWS • Azure • GCP<br>Docker • Kubernetes<br>Terraform • Serverless</p>
+            <h2 class="section-tech-title scroll-tech-reveal">Skills</h2>
+            <div class="skills-tech-container scroll-tech-reveal">
+                <div class="skill-tech-category">
+                    <div class="skill-tech-icon">☁️</div>
+                    <h3>Cloud Architecture</h3>
+                    <p class="skill-tech-list">AWS • Azure • Google Cloud<br>Kubernetes • Docker<br>Terraform • Serverless</p>
                 </div>
-                <div class="skill-category">
-                    <div class="skill-icon">💻</div>
-                    <h3>Programming</h3>
-                    <p class="skill-list">Python • JavaScript • Java<br>React • Flask • Spring Boot<br>SQL • NoSQL</p>
+                <div class="skill-tech-category">
+                    <div class="skill-tech-icon">⚡</div>
+                    <h3>Development</h3>
+                    <p class="skill-tech-list">Python • JavaScript • Java<br>React • Flask • Spring Boot<br>APIs • Microservices</p>
                 </div>
-                <div class="skill-category">
-                    <div class="skill-icon">🤖</div>
+                <div class="skill-tech-category">
+                    <div class="skill-tech-icon">🤖</div>
                     <h3>AI & Machine Learning</h3>
-                    <p class="skill-list">Machine Learning • NLP<br>TensorFlow • PyTorch<br>Data Analytics • PySpark</p>
+                    <p class="skill-tech-list">Machine Learning • Deep Learning<br>NLP • Computer Vision<br>TensorFlow • PyTorch</p>
                 </div>
-                <div class="skill-category">
-                    <div class="skill-icon">🔧</div>
-                    <h3>DevOps & Tools</h3>
-                    <p class="skill-list">CI/CD • GitHub Actions<br>Monitoring • Grafana<br>Prometheus • Jenkins</p>
+                <div class="skill-tech-category">
+                    <div class="skill-tech-icon">🔧</div>
+                    <h3>DevOps & Automation</h3>
+                    <p class="skill-tech-list">CI/CD • GitHub Actions<br>Monitoring • Grafana<br>Jenkins • Automation</p>
                 </div>
             </div>
         </div>
@@ -945,9 +1397,9 @@
 
     <footer id="contact">
         <div class="container">
-            <p>&copy; 2025 Niharika MG. Built with passion for technology and innovation.</p>
-            <p style="margin-top: 1rem; opacity: 0.8;">
-                <a href="mailto:mgniharikaa@gmail.com">mgniharikaa@gmail.com</a> • 
+            <p>&copy; 2025 Niharika MG. Engineered with cutting-edge technology and innovation.</p>
+            <p style="margin-top: 1.5rem;">
+                <a href="mailto:mgniharikaa@gmail.com">Contact</a> • 
                 <a href="https://www.linkedin.com/in/niharika-mg" target="_blank">LinkedIn</a> •
                 <a href="https://niharikamg.github.io/portfolio/" target="_blank">Portfolio</a>
             </p>
@@ -955,28 +1407,31 @@
     </footer>
 
     <script>
-        // Create animated background particles
-        function createParticles() {
-            const particles = document.getElementById('particles');
+        // Tech Loading Screen
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+            }, 1000);
+        });
+
+        // Create cyber particles
+        function createCyberParticles() {
+            const particles = document.getElementById('cyberParticles');
             const particleCount = 50;
 
             for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('div');
-                particle.className = 'particle';
+                particle.className = 'cyber-particle';
                 
-                const size = Math.random() * 4 + 2;
-                particle.style.width = size + 'px';
-                particle.style.height = size + 'px';
                 particle.style.left = Math.random() * 100 + '%';
-                particle.style.top = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 6 + 's';
-                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                particle.style.animationDelay = Math.random() * 8 + 's';
+                particle.style.animationDuration = (Math.random() * 4 + 6) + 's';
                 
                 particles.appendChild(particle);
             }
         }
 
-        // Smooth scrolling for navigation links
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -991,35 +1446,43 @@
         });
 
         // Scroll reveal animation
-        const observerOptions = {
+        const techObserverOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            rootMargin: '0px 0px -100px 0px'
         };
 
-        const observer = new IntersectionObserver((entries) => {
+        const techObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('revealed');
                 }
             });
-        }, observerOptions);
+        }, techObserverOptions);
 
-        document.querySelectorAll('.scroll-reveal').forEach(element => {
-            observer.observe(element);
+        document.querySelectorAll('.scroll-tech-reveal').forEach(element => {
+            techObserver.observe(element);
         });
 
-        // Header background on scroll
+        // Header effects
         window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
+            const header = document.getElementById('header');
             if (window.scrollY > 100) {
-                header.style.background = 'rgba(15, 15, 35, 0.95)';
+                header.classList.add('header-active');
             } else {
-                header.style.background = 'rgba(15, 15, 35, 0.9)';
+                header.classList.remove('header-active');
             }
         });
 
         // Initialize
-        createParticles();
+        createCyberParticles();
+
+        // Particle regeneration
+        setInterval(() => {
+            const particles = document.querySelectorAll('.cyber-particle');
+            if (particles.length < 30) {
+                createCyberParticles();
+            }
+        }, 4000);
     </script>
 </body>
 </html>
