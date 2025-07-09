@@ -1139,7 +1139,7 @@
             <h2 class="section-tech-title scroll-tech-reveal">Projects</h2>
             <div class="projects-tech-grid scroll-tech-reveal">
                 <div class="project-tech-card">
-                    <h3 class="project-tech-title">CloudOps Insight Dashboard</h3>
+                    <h3 class="project-tech-title">CloudOps Insight Dashboard (Ongoing) </h3>
                     <p class="project-tech-description">
                         Next-gen monitoring platform combining Prometheus, Grafana, and Kubernetes with automated Terraform deployment. Features real-time alerting, predictive analytics, and intelligent resource optimization.
                     </p>
