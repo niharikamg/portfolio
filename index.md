@@ -1551,15 +1551,17 @@
     </section>
 
     <footer id="contact">
-        <div class="container">
-            <p>&copy; 2025 Niharika MG. Engineered with cutting-edge technology and innovation.</p>
-            <p style="margin-top: 1.5rem;">
-                <a href="mailto:mgniharikaa@gmail.com">Contact</a> • 
-                <a href="https://www.linkedin.com/in/niharika-mg" target="_blank">LinkedIn</a> •
-                <a href="https://niharikamg.github.io/portfolio/" target="_blank">Portfolio</a>
-            </p>
-        </div>
-    </footer>
+    <div class="container">
+        <p>&copy; 2025 Niharika MG. Engineered with cutting-edge technology and innovation.</p>
+        <p style="margin-top: 1.5rem;">
+            <a href="mailto:mgniharikaa@gmail.com">Contact</a> • 
+            <a href="mailto:mysorena@mail.uc.edu">Professional Email</a> • 
+            <a href="https://www.linkedin.com/in/niharika-mg" target="_blank">LinkedIn</a> •
+            <a href="https://github.com/niharikamg" target="_blank">GitHub</a> •
+            <a href="https://niharikamg.github.io/portfolio/" target="_blank">Portfolio</a>
+        </p>
+    </div>
+</footer>
 
     <script>
         // Space Loading Screen
