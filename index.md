@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,21 +14,24 @@
         }
 
         :root {
-            --primary-bg: #0A0A0F;
-            --secondary-bg: #0F0F1A;
-            --tertiary-bg: #1A1A2E;
-            --accent-cyber: #00F5FF;
-            --accent-neon: #FF0080;
-            --accent-electric: #00FF41;
-            --accent-purple: #8B5CF6;
+            /* Space-inspired color palette */
+            --primary-bg: #0B0C10;
+            --secondary-bg: #1F2833;
+            --tertiary-bg: #2A2D3A;
+            --accent-cosmic: #66FCF1;
+            --accent-nebula: #45A29E;
+            --accent-starlight: #C5C6C7;
+            --accent-purple: #8B7ED8;
+            --accent-deep-purple: #5D4E75;
             --text-primary: #FFFFFF;
-            --text-secondary: #B4C7E7;
-            --text-muted: #64748B;
-            --glass-bg: rgba(255, 255, 255, 0.03);
-            --glass-border: rgba(0, 245, 255, 0.2);
-            --glow-cyan: 0 0 30px rgba(0, 245, 255, 0.3);
-            --glow-pink: 0 0 30px rgba(255, 0, 128, 0.3);
-            --glow-green: 0 0 30px rgba(0, 255, 65, 0.3);
+            --text-secondary: #C5C6C7;
+            --text-muted: #8892B0;
+            --glass-bg: rgba(197, 198, 199, 0.03);
+            --glass-border: rgba(102, 252, 241, 0.2);
+            --glow-cosmic: 0 0 30px rgba(102, 252, 241, 0.4);
+            --glow-nebula: 0 0 30px rgba(69, 162, 158, 0.4);
+            --glow-starlight: 0 0 30px rgba(197, 198, 199, 0.3);
+            --glow-purple: 0 0 30px rgba(139, 126, 216, 0.4);
         }
 
         body {
@@ -39,7 +43,7 @@
             position: relative;
         }
 
-        /* Futuristic Background Grid */
+        /* Cosmic Background Grid */
         .tech-grid {
             position: fixed;
             top: 0;
@@ -47,8 +51,8 @@
             width: 100%;
             height: 100%;
             background-image: 
-                linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
+                linear-gradient(rgba(102, 252, 241, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(102, 252, 241, 0.03) 1px, transparent 1px);
             background-size: 50px 50px;
             z-index: -3;
             animation: grid-pulse 4s ease-in-out infinite;
@@ -59,7 +63,7 @@
             50% { opacity: 1; }
         }
 
-        /* Cyber Particles */
+        /* Cosmic Particles */
         .cyber-particles {
             position: fixed;
             top: 0;
@@ -74,13 +78,13 @@
             position: absolute;
             width: 2px;
             height: 2px;
-            background: var(--accent-cyber);
+            background: var(--accent-cosmic);
             border-radius: 50%;
-            box-shadow: var(--glow-cyan);
-            animation: cyber-float 8s linear infinite;
+            box-shadow: var(--glow-cosmic);
+            animation: cosmic-float 8s linear infinite;
         }
 
-        @keyframes cyber-float {
+        @keyframes cosmic-float {
             0% {
                 transform: translateY(100vh) translateX(0);
                 opacity: 0;
@@ -93,7 +97,7 @@
             }
         }
 
-        /* Holographic Orbs */
+        /* Galactic Orbs */
         .holo-orbs {
             position: fixed;
             top: 0;
@@ -107,10 +111,10 @@
         .holo-orb {
             position: absolute;
             border-radius: 50%;
-            background: conic-gradient(from 0deg, var(--accent-cyber), var(--accent-neon), var(--accent-electric), var(--accent-cyber));
+            background: conic-gradient(from 0deg, var(--accent-cosmic), var(--accent-nebula), var(--accent-purple), var(--accent-cosmic));
             filter: blur(60px);
             opacity: 0.15;
-            animation: holo-drift 20s ease-in-out infinite;
+            animation: galactic-drift 20s ease-in-out infinite;
         }
 
         .holo-orb:nth-child(1) {
@@ -137,7 +141,7 @@
             animation-delay: -8s;
         }
 
-        @keyframes holo-drift {
+        @keyframes galactic-drift {
             0%, 100% { transform: translate(0, 0) scale(1); }
             25% { transform: translate(50px, -100px) scale(1.1); }
             50% { transform: translate(-30px, 80px) scale(0.9); }
@@ -150,7 +154,36 @@
             padding: 0 2rem;
         }
 
-        /* Next-Gen Header */
+        /* Mobile Navigation Toggle */
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .nav-toggle span {
+            width: 25px;
+            height: 3px;
+            background: var(--accent-cosmic);
+            margin: 2px 0;
+            transition: 0.3s;
+            border-radius: 2px;
+        }
+
+        .nav-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .nav-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .nav-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+        }
+
+        /* Space Header */
         header {
             position: fixed;
             top: 0;
@@ -158,15 +191,15 @@
             right: 0;
             z-index: 1000;
             padding: 1.5rem 0;
-            background: rgba(10, 10, 15, 0.8);
+            background: rgba(11, 12, 16, 0.8);
             backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--glass-border);
             transition: all 0.3s ease;
         }
 
         .header-active {
-            background: rgba(10, 10, 15, 0.95);
-            box-shadow: var(--glow-cyan);
+            background: rgba(11, 12, 16, 0.95);
+            box-shadow: var(--glow-cosmic);
         }
 
         nav {
@@ -179,7 +212,7 @@
             font-family: 'JetBrains Mono', monospace;
             font-size: 1.5rem;
             font-weight: 800;
-            background: linear-gradient(135deg, var(--accent-cyber), var(--accent-electric));
+            background: linear-gradient(135deg, var(--accent-cosmic), var(--accent-starlight));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -190,7 +223,7 @@
 
         .logo::before {
             content: '> ';
-            color: var(--accent-neon);
+            color: var(--accent-nebula);
             animation: cursor-blink 1s infinite;
         }
 
@@ -236,12 +269,12 @@
 
         .nav-links a:hover::before {
             opacity: 1;
-            border-color: var(--accent-cyber);
-            box-shadow: var(--glow-cyan);
+            border-color: var(--accent-cosmic);
+            box-shadow: var(--glow-cosmic);
         }
 
         .nav-links a:hover {
-            color: var(--accent-cyber);
+            color: var(--accent-cosmic);
             transform: translateY(-2px);
         }
 
@@ -262,7 +295,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 50% 50%, rgba(0, 245, 255, 0.1) 0%, transparent 70%);
+            background: radial-gradient(circle at 50% 50%, rgba(102, 252, 241, 0.1) 0%, transparent 70%);
             z-index: -1;
         }
 
@@ -284,13 +317,13 @@
             bottom: -20px;
             border: 2px solid transparent;
             border-radius: 50%;
-            background: conic-gradient(from 0deg, var(--accent-cyber), var(--accent-neon), var(--accent-electric), var(--accent-cyber)) border-box;
+            background: conic-gradient(from 0deg, var(--accent-cosmic), var(--accent-nebula), var(--accent-purple), var(--accent-cosmic)) border-box;
             mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
             mask-composite: exclude;
-            animation: holo-rotate 8s linear infinite;
+            animation: galactic-rotate 8s linear infinite;
         }
 
-        @keyframes holo-rotate {
+        @keyframes galactic-rotate {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
@@ -299,12 +332,12 @@
             width: 200px;
             height: 200px;
             border-radius: 50%;
-            border: 3px solid var(--accent-cyber);
+            border: 3px solid var(--accent-cosmic);
             display: block;
             transition: all 0.5s ease;
             box-shadow: 
-                var(--glow-cyan),
-                0 0 60px rgba(0, 245, 255, 0.2),
+                var(--glow-cosmic),
+                0 0 60px rgba(102, 252, 241, 0.2),
                 inset 0 0 30px rgba(255, 255, 255, 0.1);
             animation: profile-pulse 4s ease-in-out infinite;
         }
@@ -312,14 +345,14 @@
         @keyframes profile-pulse {
             0%, 100% {
                 box-shadow: 
-                    var(--glow-cyan),
-                    0 0 60px rgba(0, 245, 255, 0.2),
+                    var(--glow-cosmic),
+                    0 0 60px rgba(102, 252, 241, 0.2),
                     inset 0 0 30px rgba(255, 255, 255, 0.1);
             }
             50% {
                 box-shadow: 
-                    0 0 50px rgba(0, 245, 255, 0.6),
-                    0 0 100px rgba(0, 245, 255, 0.3),
+                    0 0 50px rgba(102, 252, 241, 0.6),
+                    0 0 100px rgba(102, 252, 241, 0.3),
                     inset 0 0 50px rgba(255, 255, 255, 0.2);
             }
         }
@@ -327,15 +360,15 @@
         .profile-img:hover {
             transform: scale(1.05);
             box-shadow: 
-                0 0 80px rgba(0, 245, 255, 0.8),
-                0 0 160px rgba(0, 245, 255, 0.4);
+                0 0 80px rgba(102, 252, 241, 0.8),
+                0 0 160px rgba(102, 252, 241, 0.4);
         }
 
         .tech-badge {
             position: absolute;
             top: -10px;
             right: -10px;
-            background: linear-gradient(135deg, var(--accent-neon), var(--accent-purple));
+            background: linear-gradient(135deg, var(--accent-nebula), var(--accent-purple));
             color: white;
             padding: 0.5rem;
             border-radius: 50%;
@@ -350,14 +383,14 @@
 
         .hero h1 {
             font-family: 'JetBrains Mono', monospace;
-            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-size: clamp(2rem, 8vw, 5rem);
             font-weight: 800;
             margin-bottom: 1.5rem;
             background: linear-gradient(135deg, 
                 var(--text-primary) 0%, 
-                var(--accent-cyber) 30%, 
-                var(--accent-neon) 60%, 
-                var(--accent-electric) 100%);
+                var(--accent-cosmic) 30%, 
+                var(--accent-nebula) 60%, 
+                var(--accent-starlight) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -379,7 +412,7 @@
 
         .hero .subtitle {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 1.2rem;
+            font-size: clamp(1rem, 3vw, 1.2rem);
             font-weight: 600;
             margin-bottom: 2rem;
             color: var(--text-secondary);
@@ -389,7 +422,7 @@
         }
 
         .hero .description {
-            font-size: 1.1rem;
+            font-size: clamp(1rem, 2.5vw, 1.1rem);
             max-width: 700px;
             margin: 0 auto 3rem;
             color: var(--text-secondary);
@@ -397,13 +430,14 @@
             animation: fadeInUp 1s ease-out 0.6s both;
         }
 
-        /* Next-Gen Social Links */
+        /* Space Social Links */
         .social-tech {
             display: flex;
             justify-content: center;
             gap: 2rem;
             margin-top: 3rem;
             animation: fadeInUp 1s ease-out 0.9s both;
+            flex-wrap: wrap;
         }
 
         .social-tech-btn {
@@ -413,7 +447,7 @@
             gap: 0.8rem;
             padding: 1rem 2rem;
             background: var(--glass-bg);
-            color: var(--accent-cyber);
+            color: var(--accent-cosmic);
             text-decoration: none;
             border-radius: 12px;
             font-family: 'JetBrains Mono', monospace;
@@ -436,7 +470,7 @@
             height: 100%;
             background: linear-gradient(90deg, 
                 transparent, 
-                rgba(0, 245, 255, 0.2), 
+                rgba(102, 252, 241, 0.2), 
                 transparent);
             transition: left 0.5s ease;
         }
@@ -447,8 +481,8 @@
 
         .social-tech-btn:hover {
             transform: translateY(-3px);
-            box-shadow: var(--glow-cyan);
-            border-color: var(--accent-cyber);
+            box-shadow: var(--glow-cosmic);
+            border-color: var(--accent-cosmic);
             color: var(--text-primary);
         }
 
@@ -466,7 +500,7 @@
             margin-bottom: 4rem;
             background: linear-gradient(135deg, 
                 var(--text-primary) 0%, 
-                var(--accent-cyber) 100%);
+                var(--accent-cosmic) 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -477,17 +511,17 @@
 
         .section-tech-title::before {
             content: '[';
-            color: var(--accent-neon);
+            color: var(--accent-nebula);
             margin-right: 1rem;
         }
 
         .section-tech-title::after {
             content: ']';
-            color: var(--accent-neon);
+            color: var(--accent-nebula);
             margin-left: 1rem;
         }
 
-        /* Futuristic About Section */
+        /* Cosmic About Section */
         .about-tech {
             max-width: 900px;
             margin: 0 auto;
@@ -502,7 +536,7 @@
             backdrop-filter: blur(30px);
             box-shadow: 
                 0 20px 40px rgba(0, 0, 0, 0.2),
-                var(--glow-cyan);
+                var(--glow-cosmic);
             transition: all 0.5s ease;
             position: relative;
             overflow: hidden;
@@ -517,7 +551,7 @@
             height: 200%;
             background: conic-gradient(from 0deg, 
                 transparent, 
-                rgba(0, 245, 255, 0.05), 
+                rgba(102, 252, 241, 0.05), 
                 transparent);
             animation: card-scan 10s linear infinite;
             z-index: -1;
@@ -532,11 +566,11 @@
             transform: translateY(-10px);
             box-shadow: 
                 0 30px 60px rgba(0, 0, 0, 0.3),
-                0 0 80px rgba(0, 245, 255, 0.3);
+                0 0 80px rgba(102, 252, 241, 0.3);
         }
 
         .about-tech-text {
-            font-size: 1.2rem;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
             line-height: 1.8;
             color: var(--text-secondary);
             margin-bottom: 2rem;
@@ -545,7 +579,7 @@
         /* Revolutionary Project Grid */
         .projects-tech-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2.5rem;
             margin-top: 4rem;
         }
@@ -570,9 +604,9 @@
             right: 0;
             height: 3px;
             background: linear-gradient(90deg, 
-                var(--accent-cyber), 
-                var(--accent-neon), 
-                var(--accent-electric));
+                var(--accent-cosmic), 
+                var(--accent-nebula), 
+                var(--accent-purple));
             transform: scaleX(0);
             transform-origin: left;
             transition: transform 0.3s ease;
@@ -591,7 +625,7 @@
             height: 100%;
             background: linear-gradient(45deg, 
                 transparent, 
-                rgba(0, 245, 255, 0.05), 
+                rgba(102, 252, 241, 0.05), 
                 transparent);
             transition: top 0.5s ease;
         }
@@ -603,20 +637,20 @@
         .project-tech-card:hover {
             transform: translateY(-10px) rotateX(5deg);
             box-shadow: 
-                0 25px 50px rgba(0, 245, 255, 0.2),
-                var(--glow-cyan);
-            border-color: var(--accent-cyber);
+                0 25px 50px rgba(102, 252, 241, 0.2),
+                var(--glow-cosmic);
+            border-color: var(--accent-cosmic);
         }
 
         .project-tech-title {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 1.3rem;
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
             font-weight: 700;
             margin-bottom: 1.5rem;
             color: var(--text-primary);
             background: linear-gradient(135deg, 
                 var(--text-primary), 
-                var(--accent-cyber));
+                var(--accent-cosmic));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -626,7 +660,7 @@
             color: var(--text-secondary);
             line-height: 1.7;
             margin-bottom: 2rem;
-            font-size: 1rem;
+            font-size: clamp(0.9rem, 2vw, 1rem);
         }
 
         .project-tech-stack {
@@ -638,13 +672,13 @@
 
         .tech-stack-tag {
             background: linear-gradient(135deg, 
-                rgba(0, 245, 255, 0.1), 
-                rgba(255, 0, 128, 0.1));
-            color: var(--accent-cyber);
+                rgba(102, 252, 241, 0.1), 
+                rgba(69, 162, 158, 0.1));
+            color: var(--accent-cosmic);
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
+            font-size: clamp(0.7rem, 1.5vw, 0.8rem);
             font-weight: 600;
             border: 1px solid var(--glass-border);
             transition: all 0.3s ease;
@@ -655,11 +689,11 @@
 
         .tech-stack-tag:hover {
             background: linear-gradient(135deg, 
-                var(--accent-cyber), 
-                var(--accent-neon));
+                var(--accent-cosmic), 
+                var(--accent-nebula));
             color: var(--primary-bg);
             transform: translateY(-2px) scale(1.05);
-            box-shadow: var(--glow-cyan);
+            box-shadow: var(--glow-cosmic);
         }
 
         .project-tech-links {
@@ -672,15 +706,15 @@
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            color: var(--accent-cyber);
+            color: var(--accent-cosmic);
             text-decoration: none;
             font-family: 'JetBrains Mono', monospace;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: clamp(0.8rem, 1.8vw, 0.9rem);
             transition: all 0.3s ease;
             padding: 0.8rem 1.5rem;
             border-radius: 10px;
-            background: rgba(0, 245, 255, 0.1);
+            background: rgba(102, 252, 241, 0.1);
             border: 1px solid var(--glass-border);
             backdrop-filter: blur(10px);
             text-transform: uppercase;
@@ -688,11 +722,11 @@
         }
 
         .project-tech-link:hover {
-            background: var(--accent-cyber);
+            background: var(--accent-cosmic);
             color: var(--primary-bg);
             transform: translateY(-2px);
-            box-shadow: var(--glow-cyan);
-            border-color: var(--accent-cyber);
+            box-shadow: var(--glow-cosmic);
+            border-color: var(--accent-cosmic);
         }
 
         /* Advanced Collapsible Projects */
@@ -705,11 +739,11 @@
             text-align: center;
             color: var(--text-secondary);
             margin: 5rem 0 3rem;
-            font-size: 2rem;
+            font-size: clamp(1.5rem, 4vw, 2rem);
             font-weight: 700;
             background: linear-gradient(135deg, 
                 var(--text-secondary), 
-                var(--accent-cyber));
+                var(--accent-cosmic));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -728,9 +762,9 @@
         }
 
         .project-tech-toggle:hover {
-            background: rgba(0, 245, 255, 0.05);
-            box-shadow: var(--glow-cyan);
-            border-color: var(--accent-cyber);
+            background: rgba(102, 252, 241, 0.05);
+            box-shadow: var(--glow-cosmic);
+            border-color: var(--accent-cosmic);
         }
 
         .project-tech-summary {
@@ -738,7 +772,7 @@
             cursor: pointer;
             font-family: 'JetBrains Mono', monospace;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: clamp(1rem, 2.5vw, 1.1rem);
             color: var(--text-primary);
             display: flex;
             justify-content: space-between;
@@ -749,7 +783,7 @@
 
         .project-tech-summary::before {
             content: '>';
-            color: var(--accent-cyber);
+            color: var(--accent-cosmic);
             margin-right: 1rem;
             transition: transform 0.3s ease;
         }
@@ -759,33 +793,33 @@
         }
 
         .project-tech-summary:hover {
-            color: var(--accent-cyber);
+            color: var(--accent-cosmic);
         }
 
         .project-tech-summary::after {
             content: '[+]';
-            font-size: 1rem;
-            color: var(--accent-neon);
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            color: var(--accent-nebula);
             transition: all 0.3s ease;
         }
 
         .project-tech-toggle[open] .project-tech-summary::after {
             content: '[-]';
-            color: var(--accent-electric);
+            color: var(--accent-starlight);
         }
 
         .project-tech-details {
             padding: 0 2rem 2rem;
             color: var(--text-secondary);
             line-height: 1.7;
-            font-size: 1rem;
+            font-size: clamp(0.9rem, 2vw, 1rem);
             border-top: 1px solid var(--glass-border);
         }
 
-        /* Next-Gen Skills Section */
+        /* Cosmic Skills Section */
         .skills-tech-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2.5rem;
             margin-top: 4rem;
         }
@@ -811,7 +845,7 @@
             height: 200%;
             background: conic-gradient(from 0deg, 
                 transparent, 
-                rgba(0, 245, 255, 0.05), 
+                rgba(102, 252, 241, 0.05), 
                 transparent);
             animation: skill-scan 15s linear infinite;
             z-index: -1;
@@ -824,37 +858,37 @@
 
         .skill-tech-category:hover {
             transform: translateY(-10px) scale(1.02);
-            box-shadow: var(--glow-cyan);
-            border-color: var(--accent-cyber);
+            box-shadow: var(--glow-cosmic);
+            border-color: var(--accent-cosmic);
         }
 
         .skill-tech-icon {
-            font-size: 4rem;
+            font-size: clamp(3rem, 6vw, 4rem);
             margin-bottom: 2rem;
-            filter: drop-shadow(var(--glow-cyan));
+            filter: drop-shadow(var(--glow-cosmic));
             animation: icon-tech-float 4s ease-in-out infinite;
         }
 
         @keyframes icon-tech-float {
             0%, 100% { 
                 transform: translateY(0px);
-                filter: drop-shadow(var(--glow-cyan));
+                filter: drop-shadow(var(--glow-cosmic));
             }
             50% { 
                 transform: translateY(-10px);
-                filter: drop-shadow(0 0 40px var(--accent-cyber));
+                filter: drop-shadow(0 0 40px var(--accent-cosmic));
             }
         }
 
         .skill-tech-category h3 {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 1.3rem;
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
             margin-bottom: 2rem;
             color: var(--text-primary);
             font-weight: 700;
             background: linear-gradient(135deg, 
                 var(--text-primary), 
-                var(--accent-cyber));
+                var(--accent-cosmic));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -865,15 +899,15 @@
         .skill-tech-list {
             color: var(--text-secondary);
             line-height: 2;
-            font-size: 1rem;
+            font-size: clamp(0.9rem, 2vw, 1rem);
         }
 
-        /* Cyber Footer */
+        /* Space Footer */
         footer {
             background: linear-gradient(135deg, 
-                rgba(10, 10, 15, 0.95), 
-                rgba(15, 15, 26, 0.95));
-            border-top: 2px solid var(--accent-cyber);
+                rgba(11, 12, 16, 0.95), 
+                rgba(31, 40, 51, 0.95));
+            border-top: 2px solid var(--accent-cosmic);
             color: var(--text-secondary);
             text-align: center;
             padding: 3rem 0;
@@ -890,9 +924,9 @@
             height: 3px;
             background: linear-gradient(90deg, 
                 transparent, 
-                var(--accent-cyber), 
-                var(--accent-neon), 
-                var(--accent-electric), 
+                var(--accent-cosmic), 
+                var(--accent-nebula), 
+                var(--accent-starlight), 
                 transparent);
             animation: footer-scan 3s ease-in-out infinite;
         }
@@ -903,7 +937,7 @@
         }
 
         footer a {
-            color: var(--accent-cyber);
+            color: var(--accent-cosmic);
             text-decoration: none;
             font-family: 'JetBrains Mono', monospace;
             font-weight: 600;
@@ -913,16 +947,16 @@
         }
 
         footer a:hover {
-            color: var(--accent-electric);
-            text-shadow: var(--glow-green);
+            color: var(--accent-starlight);
+            text-shadow: var(--glow-starlight);
         }
 
         footer p {
-            font-size: 1rem;
+            font-size: clamp(0.9rem, 2vw, 1rem);
             margin-bottom: 1rem;
         }
 
-        /* Tech Animations */
+        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -945,28 +979,71 @@
             transform: translateY(0);
         }
 
-        /* Responsive Design */
+        /* Enhanced Mobile Responsiveness */
         @media (max-width: 1024px) {
             .projects-tech-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
             }
             
             .skills-tech-container {
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 2rem;
+            }
+
+            .container {
+                padding: 0 1.5rem;
             }
         }
 
         @media (max-width: 768px) {
+            .nav-toggle {
+                display: flex;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(11, 12, 16, 0.95);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                gap: 0;
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+                border-top: 1px solid var(--glass-border);
+            }
+
+            .nav-links.active {
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .nav-links li {
+                border-bottom: 1px solid var(--glass-border);
+            }
+
+            .nav-links li:last-child {
+                border-bottom: none;
+            }
+
+            .nav-links a {
+                display: block;
+                padding: 1rem 2rem;
+                font-size: 1rem;
+            }
+
             .container {
                 padding: 0 1rem;
             }
 
-            .nav-links {
-                display: none;
-            }
-
             .hero {
-                padding: 0 1rem;
+                padding: 100px 0 80px;
+                min-height: 90vh;
             }
 
             .profile-img {
@@ -978,6 +1055,14 @@
                 flex-direction: column;
                 align-items: center;
                 gap: 1rem;
+                max-width: 300px;
+                margin: 3rem auto 0;
+            }
+
+            .social-tech-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 1rem;
             }
 
             .project-tech-card,
@@ -986,24 +1071,83 @@
             }
 
             .about-tech-card {
-                padding: 2.5rem 2rem;
+                padding: 2.5rem 1.5rem;
             }
 
             .project-tech-summary {
                 padding: 1.5rem;
                 font-size: 1rem;
+                flex-wrap: wrap;
+                text-align: left;
             }
 
             .project-tech-details {
                 padding: 0 1.5rem 2rem;
             }
 
+            .projects-tech-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .skills-tech-container {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
             section {
                 padding: 80px 0;
             }
+
+            .tech-stack-tag {
+                font-size: 0.7rem;
+                padding: 0.4rem 0.8rem;
+            }
+
+            .project-tech-links {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+
+            .project-tech-link {
+                text-align: center;
+                justify-content: center;
+            }
         }
 
-        /* Cyber Scrollbar */
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+                letter-spacing: 1px;
+            }
+
+            .hero .subtitle {
+                font-size: 0.9rem;
+                letter-spacing: 1px;
+            }
+
+            .section-tech-title {
+                font-size: 2rem;
+                letter-spacing: 1px;
+            }
+
+            .project-tech-card,
+            .skill-tech-category,
+            .about-tech-card {
+                padding: 1.5rem 1rem;
+            }
+
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Cosmic Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -1014,15 +1158,15 @@
 
         ::-webkit-scrollbar-thumb {
             background: linear-gradient(180deg, 
-                var(--accent-cyber), 
-                var(--accent-neon));
+                var(--accent-cosmic), 
+                var(--accent-nebula));
             border-radius: 4px;
         }
 
         ::-webkit-scrollbar-thumb:hover {
             background: linear-gradient(180deg, 
-                var(--accent-neon), 
-                var(--accent-electric));
+                var(--accent-nebula), 
+                var(--accent-starlight));
         }
 
         /* Loading Screen */
@@ -1049,25 +1193,33 @@
             width: 100px;
             height: 100px;
             border: 3px solid transparent;
-            border-top: 3px solid var(--accent-cyber);
+            border-top: 3px solid var(--accent-cosmic);
             border-radius: 50%;
-            animation: tech-spin 1s linear infinite;
-            box-shadow: var(--glow-cyan);
+            animation: cosmic-spin 1s linear infinite;
+            box-shadow: var(--glow-cosmic);
         }
 
-        @keyframes tech-spin {
+        @keyframes cosmic-spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+
+        /* Enhanced Mobile Menu Animation */
+        @media (max-width: 768px) {
+            .nav-links a:hover {
+                background: rgba(102, 252, 241, 0.1);
+                transform: translateX(10px);
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Tech Loading Screen -->
+    <!-- Space Loading Screen -->
     <div class="tech-loader" id="loader">
         <div class="loader-tech-ring"></div>
     </div>
 
-    <!-- Futuristic Background Effects -->
+    <!-- Cosmic Background Effects -->
     <div class="tech-grid"></div>
     <div class="cyber-particles" id="cyberParticles"></div>
     <div class="holo-orbs">
@@ -1079,7 +1231,12 @@
     <header id="header">
         <nav class="container">
             <div class="logo">Niharika.MG</div>
-            <ul class="nav-links">
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -1151,7 +1308,7 @@
                         <span class="tech-stack-tag">CI/CD</span>
                     </div>
                     <div class="project-tech-links">
-                        <a href="https://github.com/niharikamg/CloudOps-Insight" class="project-tech-link" target="_blank">
+                        <a href="https://github.com/niharikamg/CloudOps-Insight-Cloud-Monitoring-Deployment-Dashboard" class="project-tech-link" target="_blank">
                             View Code
                         </a>
                     </div>
@@ -1176,19 +1333,19 @@
                 </div>
 
                 <div class="project-tech-card">
-                    <h3 class="project-tech-title">Decentralized AI Marketplace</h3>
+                    <h3 class="project-tech-title">AI Tools Suite</h3>
                     <p class="project-tech-description">
-                        Revolutionary blockchain-based platform for AI model trading using Ethereum smart contracts, IPFS storage, and Web3 integration. Enables secure, decentralized AI commerce.
+                        Comprehensive AI toolkit including resume analysis, job recommendations, financial management, and threat detection with advanced ML algorithms. Features intelligent automation and data processing.
                     </p>
                     <div class="project-tech-stack">
-                        <span class="tech-stack-tag">React</span>
-                        <span class="tech-stack-tag">Solidity</span>
-                        <span class="tech-stack-tag">Web3</span>
-                        <span class="tech-stack-tag">IPFS</span>
+                        <span class="tech-stack-tag">Flask</span>
+                        <span class="tech-stack-tag">Spring Boot</span>
+                        <span class="tech-stack-tag">ML</span>
+                        <span class="tech-stack-tag">PostgreSQL</span>
                     </div>
                     <div class="project-tech-links">
-                        <a href="https://github.com/niharikamg/Decentralized-AI-Model-Marketplace" class="project-tech-link" target="_blank">
-                            View Code
+                        <a href="https://github.com/niharikamg?tab=repositories&q=AI" class="project-tech-link" target="_blank">
+                            View Suite
                         </a>
                     </div>
                 </div>
@@ -1255,11 +1412,11 @@
                 </details>
 
                 <details class="project-tech-toggle">
-                    <summary class="project-tech-summary">AI Tools Suite</summary>
+                    <summary class="project-tech-summary">Decentralized AI Marketplace</summary>
                     <div class="project-tech-details">
-                        <p>Comprehensive AI toolkit including resume analysis, job recommendations, financial management, and threat detection with advanced ML algorithms.</p>
-                        <p><strong>Tech Stack:</strong> Flask • Spring Boot • ML • PostgreSQL</p>
-                        <a href="https://github.com/niharikamg?tab=repositories&q=AI" class="project-tech-link" target="_blank">View Suite</a>
+                        <p>Revolutionary blockchain-based platform for AI model trading using Ethereum smart contracts, IPFS storage, and Web3 integration. Enables secure, decentralized AI commerce.</p>
+                        <p><strong>Tech Stack:</strong> React • Solidity • Web3 • IPFS</p>
+                        <a href="https://github.com/niharikamg/Decentralized-AI-Model-Marketplace" class="project-tech-link" target="_blank">View Code</a>
                     </div>
                 </details>
 
@@ -1406,15 +1563,40 @@
     </footer>
 
     <script>
-        // Tech Loading Screen
+        // Space Loading Screen
         window.addEventListener('load', () => {
             setTimeout(() => {
                 document.getElementById('loader').classList.add('hidden');
             }, 1000);
         });
 
-        // Create cyber particles
-        function createCyberParticles() {
+        // Mobile Navigation Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navToggle.contains(e.target) && !navLinks.contains(e.target)) {
+                navToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
+
+        // Create cosmic particles
+        function createCosmicParticles() {
             const particles = document.getElementById('cyberParticles');
             const particleCount = 50;
 
@@ -1445,21 +1627,21 @@
         });
 
         // Scroll reveal animation
-        const techObserverOptions = {
+        const cosmicObserverOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -100px 0px'
         };
 
-        const techObserver = new IntersectionObserver((entries) => {
+        const cosmicObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('revealed');
                 }
             });
-        }, techObserverOptions);
+        }, cosmicObserverOptions);
 
         document.querySelectorAll('.scroll-tech-reveal').forEach(element => {
-            techObserver.observe(element);
+            cosmicObserver.observe(element);
         });
 
         // Header effects
@@ -1473,15 +1655,31 @@
         });
 
         // Initialize
-        createCyberParticles();
+        createCosmicParticles();
 
         // Particle regeneration
         setInterval(() => {
             const particles = document.querySelectorAll('.cyber-particle');
             if (particles.length < 30) {
-                createCyberParticles();
+                createCosmicParticles();
             }
         }, 4000);
+
+        // Enhanced mobile experience: prevent scroll when mobile menu is open
+        navToggle.addEventListener('click', () => {
+            if (navLinks.classList.contains('active')) {
+                document.body.style.overflow = '';
+            } else {
+                document.body.style.overflow = 'hidden';
+            }
+        });
+
+        // Restore scroll when mobile menu is closed
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.body.style.overflow = '';
+            });
+        });
     </script>
 </body>
 </html>
