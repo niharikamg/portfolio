@@ -1431,7 +1431,7 @@
             </div>
 
             <div class="projects-tech-collapsible scroll-tech-reveal">
-                <h3 class="section-tech-subtitle">Specialized Solutions</h3>
+                <h3 class="section-tech-subtitle">Additional Projects</h3>
                 
                 <details class="project-tech-toggle">
                     <summary class="project-tech-summary">AI Code Refactoring Engine</summary>
